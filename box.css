@@ -1,0 +1,23 @@
+div {
+  height: 100px;
+  width: 100px;
+  float: left;
+}
+
+img {
+  float: left;
+
+}
+
+#box1 {
+  background-color: red;
+}
+
+#box2 {
+  background-color: green;
+}
+
+#box3 {
+  background-color: blue;
+}
+

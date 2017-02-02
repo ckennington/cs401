@@ -1,0 +1,43 @@
+body {
+  padding: 10 30;
+  background-color: #DDD;
+}
+
+#content {
+  font-family: Helvetica;
+  font-size: 18px;
+  line-height: 30px;
+  border: 1px solid #333;
+  background-color: #FFF;
+  padding: 10 30;
+}
+a:hover {
+  color: green;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.funny {
+  background-color: #ADD8E6;
+}
+
+
+#box1 {
+  background-color: red;
+  height: 100px;
+}
+
+#box2 {
+  background-color: green;
+}
+
+#box3 {
+  background-color: blue;
+}
+

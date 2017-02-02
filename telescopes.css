@@ -1,0 +1,20 @@
+p {
+  color: black;
+}
+
+#telescopes {
+  color: #FF0000;
+}
+
+.quotes {
+  color: #00FF00;
+}
+
+.normal {
+  font-size: 12px;
+}
+
+
+li {
+  background-color: #FF0000;
+}
