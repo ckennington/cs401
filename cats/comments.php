@@ -1,9 +1,11 @@
 <?php
   include("header.php");
-  $data = explode("\n", file_get_contents('cats.data'));
+  require_once 'classes/Dao.php';
+  require_once 'classes/Render.php';
+  $dao = new Dao();
 ?>
 <div id="content">
-  <?php include("table.php"); ?>
+  <?php Render::renderTable($dao->getComments()); ?>
 </div>
 <?php
   include("footer.php");

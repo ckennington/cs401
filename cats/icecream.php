@@ -1,9 +1,11 @@
 <?php
   include("header.php");
-  $data = explode("\n", file_get_contents('icecream.data'));
+  require_once 'classes/Dao.php';
+  require_once 'classes/Render.php';
+  $dao = new Dao('icecream.data');
 ?>
 <div id="content">
-  <?php include("table.php"); ?>
+  <?php Render::renderTable($dao->getComments()); ?>
 </div>
 <?php
   include("footer.php");
