@@ -6,8 +6,8 @@ class Render {
       <table id='newsletter'>
       <thead>
         <tr>
-           <th>Date</th>
-           <th>Title</th>
+           <th>Comment</th>
+           <th>Age</th>
         </tr>
        </thead>";
     foreach($rows as $row) {

@@ -16,6 +16,7 @@ class Dao {
     if(empty($data[count($data)-1])) {
       unset($data[count($data)-1]);
     }
+    $data = array_reverse($data);
     return $data;
   }
 

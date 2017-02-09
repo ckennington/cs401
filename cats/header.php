@@ -5,7 +5,7 @@
   </head>
   <body>
     <div id="header">
-      <img id="logo" src="images/logo.jpg" />
+      <img id="logo" src="images/monocle.jpg" />
       <h1>Cats in Hats</h1>
     </div>
     <div id="nav">
