@@ -1,7 +1,9 @@
 <?php
+  require_once 'classes/Dao.php';
+  $dao = new Dao();
+
   $comment = $_POST['comment'];
-  $age = $_POST['age'];
-  $line = "$comment|$age\n";
-  file_put_contents("cats.data", $line, FILE_APPEND);
+  $dao->saveComment($comment);
+
   header("Location:comments.php");
   exit;

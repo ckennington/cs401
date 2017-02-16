@@ -1,23 +1,27 @@
 <?php
 class Dao {
 
-  private $file;
+  private $host = "localhost";
+  private $db = "ckenning";
+  private $user = "ckenning";
+  private $pass = "password";
 
-  public static function hello () {
-    return "there";
-  }
-
-  public function __construct ($file = 'cats.data') {
-    $this->file = $file;
+  public function getConnection () {
+    return
+      new PDO("mysql:host={$this->host};dbname={$this->db}", $this->user,
+          $this->pass);
   }
 
   public function getComments () {
-    $data = explode("\n", file_get_contents($this->file));
-    if(empty($data[count($data)-1])) {
-      unset($data[count($data)-1]);
-    }
-    $data = array_reverse($data);
-    return $data;
+    $conn = $this->getConnection();
+    return $conn->query("select comment, date_entered from comment order by date_entered desc");
   }
 
+  public function saveComment ($comment) {
+    $conn = $this->getConnection();
+    $saveQuery = "insert into comment (comment, user_id) values (:comment, 1)";
+    $q = $conn->prepare($saveQuery);
+    $q->bindParam(":comment", $comment);
+    $q->execute();
+  }
 }

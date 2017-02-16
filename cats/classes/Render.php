@@ -7,12 +7,11 @@ class Render {
       <thead>
         <tr>
            <th>Comment</th>
-           <th>Age</th>
+           <th>Date</th>
         </tr>
        </thead>";
     foreach($rows as $row) {
-      $data = explode('|', $row);
-      $table .= "<tr><td>{$data[0]}</td><td>{$data[1]}</td></tr>";
+      $table .= "<tr><td>{$row['comment']}</td><td>{$row['date_entered']}</td></tr>";
     }
     $table .= "</table>";
     echo $table;
