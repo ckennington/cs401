@@ -14,12 +14,14 @@
 ?>
 <div id="content">
   <?php echo "you have visited this site " . $_COOKIE['visited'] . " times."; ?>
-  <form method="POST" action="handler.php">
+  <form method="POST" action="handler.php"  enctype="multipart/form-data">
     <div>
-    Enter a comment
-    <input type="text" id="comment" name="comment">
+    <label for="comment">Enter a comment</label>
+    <input type="text" id="comment" value="<?php echo $_SESSION['inputs']['comment']; ?> " name="comment">
     Enter your age
-    <input type="text" id="age" name="age">
+    <input type="text" id="age" name="age" value="<?php echo $_SESSION['inputs']['age']; ?>">
+    Upload an impage
+    <input type="file" name="pic" accept="image/*">
     <input type="submit">
   </form>
   <?php
@@ -28,6 +30,7 @@
     <?php
       echo $_SESSION['message'];
       unset($_SESSION['message']);
+      unset($_SESSION['inputs']);
     ?>
   </div>
 
