@@ -3,13 +3,14 @@
 ?>
 <html>
   <head>
+    <script src="js/hello.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
   </head>
   <body>
     <div id="header">
       <img id="logo" src="images/monocle.jpg" />
-      <h1>Cats in Hats</h1>
+      <h1 id="title">Cats in Hats</h1>
     </div>
     <div id="nav">
       <ul>

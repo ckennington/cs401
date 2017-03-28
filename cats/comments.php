@@ -1,4 +1,5 @@
 <?php
+
   if (isset($_COOKIE['visited'])) {
     $visited = $_COOKIE['visited'];
     $visited++;
@@ -11,6 +12,7 @@
   require_once 'classes/Dao.php';
   require_once 'classes/Render.php';
   $dao = new Dao();
+
 ?>
 <div id="content">
   <?php echo "you have visited this site " . $_COOKIE['visited'] . " times."; ?>
