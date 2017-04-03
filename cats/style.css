@@ -47,7 +47,12 @@ table tbody tr td {
   padding: 5 5;
 }
 
+table {
+  margin-top:75px;
+}
+
 #message {
+  position: absolute;
   color: white;
   margin-top: 10px;
   padding: 10 10;

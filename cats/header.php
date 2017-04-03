@@ -3,6 +3,7 @@
 ?>
 <html>
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="js/hello.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
