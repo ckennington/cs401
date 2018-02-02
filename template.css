@@ -1,0 +1,39 @@
+ul {
+  list-style:none;
+  display:inline;
+}
+
+li {
+  display:inline;
+  margin-left: 5px;
+  border: 1px black solid;
+  border-bottom: none;
+  padding: 3 7;
+  padding-bottom: 1px;
+  background-color: #F0F8FF;
+}
+
+#content {
+  background-color: #F0F8FF;
+  border: 1px black solid;
+  padding: 3 7;
+
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10 10;
+    margin: 10 10;
+}
+
+#currentpage {
+  background-color: #6699FF; 
+}
+
+#currentpage > a {
+  background-color: #6699FF; 
+  cursor: default;
+  text-decoration: none;
+}
+
+

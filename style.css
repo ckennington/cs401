@@ -1,43 +1,34 @@
-body {
-  padding: 10 30;
-  background-color: #DDD;
-}
-
-#content {
-  font-family: Helvetica;
-  font-size: 18px;
-  line-height: 30px;
-  border: 1px solid #333;
-  background-color: #FFF;
-  padding: 10 30;
-}
-a:hover {
-  color: green;
-}
-
-.highlight {
-  background-color: yellow;
-}
-
-.italics {
-  font-style: italic;
-}
-
-.funny {
-  background-color: #ADD8E6;
+h1 { 
+  font-size: 100px;
+  font-weight:100;
+  font-family:"Lucida Console", "Courier New", monospace;
 }
 
 
-#box1 {
-  background-color: red;
-  height: 100px;
+ol {
+  list-style-type: lower-roman;
 }
 
-#box2 {
+#google {
   background-color: green;
 }
 
-#box3 {
-  background-color: blue;
+a:visited {
+  color:red;
+}
+
+
+.highlight {
+  background-color:yellow;
+}
+
+.adj {
+  background-color: #B7E2F0;
+}
+
+/* I love Helvetica */
+p {
+  font-family:"Helvetica";
+  line-height:25px;
 }
 
