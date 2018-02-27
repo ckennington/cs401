@@ -1,4 +1,5 @@
 <?php
+require_once 'KLogger.php';
 
 class Dao {
 
@@ -6,14 +7,22 @@ class Dao {
   private $db = "ckenning";
   private $user = "ckenning";
   private $pass = "password";
+  protected $logger;
+
+  public function __construct () {
+    $this->logger = new KLogger('/Users/crk/projects/cs401/src/www', KLogger::DEBUG);
+  }
 
   private function getConnection () {
     try {
-      return
+      $conn =
         new PDO("mysql:host={$this->host};dbname={$this->db}", $this->user,
             $this->pass);
+      $this->logger->logDebug("Established a database connection.");
+      return $conn;
     } catch (Exception $e) {
       echo "connection failed: " . $e->getMessage();
+      $this->logger->logFatal("The database connection failed.");
     }
   }
 
@@ -22,7 +31,9 @@ class Dao {
      $query = $conn->prepare("select * from comments");
      $query->setFetchMode(PDO::FETCH_ASSOC);
      $query->execute();
-     return $query->fetchAll();
+     $results = $query->fetchAll();
+     $this->logger->logDebug(__FUNCTION__ . " " . print_r($results,1));
+     return $results;
   }
 
   public function saveComment ($name, $comment) {
@@ -30,6 +41,7 @@ class Dao {
      $query = $conn->prepare("INSERT INTO comments (name, comment) VALUES (:name, :comment)");
      $query->bindParam(':name', $name);
      $query->bindParam(':comment', $comment);
+     $this->logger->logDebug(__FUNCTION__ . " name=[{$name}] comment=[{$comment}]");
      $query->execute();
   }
 
@@ -41,16 +53,3 @@ class Dao {
   }
 
 }
-
-
-/*
- *
-  public function getComments () {
-    $conn = $this->getConnection();
-    $stmt = $conn->prepare("SELECT * FROM comments ORDER BY date_entered DESC");
-    $stmt->setFetchMode(PDO::FETCH_ASSOC);
-    $results = $stmt->execute();
-    echo print_r($stmt->fetchAll(), 1);
-  }
-
- */

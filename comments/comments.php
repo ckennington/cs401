@@ -11,6 +11,7 @@ $comments = $dao->getComments();
   <body>
      <form action="handler.php" method="POST">
        <div>Name: <input placeholder="name here" type="text" id="name" name="name"></div>
+       <div>Age: <input type="text" id="age" name="age"></div>
        <div>Comment: <input type="text" id="comment" name="comment"></div>
        <div><input type="submit" value="Add Comment"></div>
      </form>
@@ -18,8 +19,8 @@ $comments = $dao->getComments();
      <?php
 echo "<tr><th>Name</th><th>Comment</th><th>Date</th><th></th></tr>";
         foreach ($comments as $comment) {
-          print "<tr><td>" . $comment['name'] . "</td>" .
-                "<td>" . $comment['comment'] . "</td>" .
+          print "<tr><td>" . htmlspecialchars($comment['name']) . "</td>" .
+                "<td>" . htmlspecialchars($comment['comment']) . "</td>" .
                 "<td>" . $comment['date_entered'] . "</td><td><a href='delete_comment.php?id=". $comment['id'] . "'>delete</a></td></tr>";
         }
      ?>
