@@ -36,11 +36,12 @@ class Dao {
      return $results;
   }
 
-  public function saveComment ($name, $comment) {
+  public function saveComment ($name, $comment, $imagePath) {
      $conn = $this->getConnection();
-     $query = $conn->prepare("INSERT INTO comments (name, comment) VALUES (:name, :comment)");
+     $query = $conn->prepare("INSERT INTO comments (name, comment, image_path) VALUES (:name, :comment, :image_path)");
      $query->bindParam(':name', $name);
      $query->bindParam(':comment', $comment);
+     $query->bindParam(':image_path', $imagePath);
      $this->logger->logDebug(__FUNCTION__ . " name=[{$name}] comment=[{$comment}]");
      $query->execute();
   }
