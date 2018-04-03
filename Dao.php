@@ -36,7 +36,7 @@ class Dao {
      return $results;
   }
 
-  public function saveComment ($name, $comment, $imagePath) {
+  public function saveComment ($name, $comment, $imagePath = "") {
      $conn = $this->getConnection();
      $query = $conn->prepare("INSERT INTO comments (name, comment, image_path) VALUES (:name, :comment, :image_path)");
      $query->bindParam(':name', $name);

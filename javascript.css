@@ -1,0 +1,10 @@
+.box_stuff {
+  height: 100px;
+  width: 100px;
+  background-color:red;
+}
+
+.bigger {
+  height: 200px;
+  width: 200px;
+}

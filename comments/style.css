@@ -26,3 +26,15 @@ table, th, td {
   background-color:#228B22;
 }
 
+.close {
+  border: solid white 1px;
+  padding: 0 2;
+  float: right; 
+}
+
+.close:hover {
+  color: gray;
+  text-decoration: underline;
+  cursor: pointer;
+}
+

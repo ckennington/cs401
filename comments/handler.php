@@ -3,8 +3,11 @@
   require_once '../Dao.php';
   $dao = new Dao();
 
-  #echo "<pre>" . print_r($_FILES, 1) . "</pre>";
-  #exit;
+  require_once '../KLogger.php';
+  $logger = new KLogger('/Users/crk/projects/cs401/src/www', KLogger::DEBUG);
+  $logger->logDebug("GOT IN THE HANDLER.");
+
+  $logger->logDebug(print_r($_POST,1));
 
   $name = $_POST["name"];
   $age = $_POST["age"];
@@ -44,14 +47,18 @@
   $_SESSION['messages'] = array("Nice post. Good on ya.");
 
   // save image to database
+  /*
   $basePath = "/Users/crk/projects/cs401/src/www";
   $imagePath = "/comments/images/" . $_FILES["fileToUpload"]["name"];
   if (!move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $basePath . $imagePath)) {
     throw new Exception("File move failed");
   }
+  */
 
   $comment = $_POST["comment"];
-  $dao->saveComment($name, $comment, $imagePath);
+  $dao->saveComment($name, $comment);
+
+  sleep(2);
 
   header("Location: comments.php");
   exit;
