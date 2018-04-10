@@ -57,8 +57,5 @@
 
   $comment = $_POST["comment"];
   $dao->saveComment($name, $comment);
-
-  sleep(2);
-
   header("Location: comments.php");
   exit;

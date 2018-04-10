@@ -53,4 +53,20 @@ class Dao {
      $query->execute();
   }
 
+  public function doesUserExist ($email, $password) {
+    $salt = '23efeaeat34tq3argafd';
+    $password = md5($password . $salt);
+    $conn = $this->getConnection();
+    $p = $conn->prepare("SELECT * FROM user where email = :email AND password = :password");
+    $p->bindParam(":email", $email);
+    $p->bindParam(":password", $password);
+    $p->execute();
+    $results = $p->fetch(PDO::FETCH_ASSOC);
+    if (is_array($results) && 0 < count($results)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
 }

@@ -1,5 +1,7 @@
 <?php
 session_start();
+if (isset($_SESSION['logged_in'])) {
+  echo "<a href='../logout.php'>Logout</a>";
 require_once '../Dao.php';
 $dao = new Dao();
 $comments = $dao->getComments();
@@ -8,7 +10,6 @@ $comments = $dao->getComments();
   <head>
     <link rel="stylesheet" href="style.css">
     <script src="jquery-3.3.1.js"></script>
-    <script src="comments.js"></script>
   </head>
   <body>
      <?php
@@ -47,3 +48,9 @@ $comments = $dao->getComments();
      </table>
   </body>
 </html>
+<?php
+} else {
+  header("Location:../login.php");
+  exit;
+}?>
+
