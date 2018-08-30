@@ -1,34 +1,53 @@
-h1 { 
-  font-size: 100px;
-  font-weight:100;
-  font-family:"Lucida Console", "Courier New", monospace;
+th, p {
+  font-family: sans-serif;
+  color: black;
 }
 
-
-ol {
-  list-style-type: lower-roman;
-}
-
-#google {
-  background-color: green;
-}
-
-a:visited {
-  color:red;
+table, tbody, th, td { 
+   border: 1px solid black; 
+  padding:3px 0px;
+  border: solid 1px #D1D8E1;
+  border-collapse: collapse;
+  padding: 5px 5px;
+  font-size: 13px;
 }
 
 
 .highlight {
-  background-color:yellow;
+  background-color: yellow;
 }
 
-.adj {
-  background-color: #B7E2F0;
+#link {
+  background-color: orange;
 }
 
-/* I love Helvetica */
-p {
-  font-family:"Helvetica";
-  line-height:25px;
+.names {
+  background-color: blue;
+}
+
+.green_text {
+  color: green;
+
+}
+
+span {
+  font-size: 30px;
+}
+
+ol { list-style-type: lower-roman; }
+
+/* this is the front page */
+h1 {
+  font-family: Helvetica, sans-serif; 
+
+}
+
+h1:hover {
+  background-color: green;
+  font-size: 50px;
+}
+
+th {
+  font-size: 20px;
 }
 
