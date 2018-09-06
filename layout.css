@@ -1,0 +1,24 @@
+.box {
+  height: 100px;
+  width: 25%;
+  border: solid black 2px;
+  margin: 2 2;
+  padding: 10 10;
+  text-align: center;
+  line-height: 100px;
+}
+
+#one {
+  background-color: #EE0000;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+#two {
+  background-color: #008080;
+}
+
+#three {
+  background-color: #66CCFF;
+}
