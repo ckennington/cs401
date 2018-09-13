@@ -1,0 +1,41 @@
+body {
+  background-color: #DDD;
+}
+
+#header {
+  background-color: #DDD;
+}
+
+h1 > img {
+  height: 100px;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+th {
+  background-color: #AAA;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10 10;
+    margin: 10 10;
+}
+
+ul {
+  list-style:none;
+  display:inline;
+}
+
+li {
+  display:inline;
+  margin-left: 5px;
+  border: 1px black solid;
+  border-bottom: none;
+  padding: 3 7;
+  padding-bottom: 1px;
+  background-color: #F0F8FF;
+}
