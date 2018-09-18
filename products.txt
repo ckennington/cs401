@@ -1,0 +1,4 @@
+O:7:"Product":4:{s:4:"name";s:2:"TV";s:11:"description";s:14:"75'' Panasonic";s:5:"price";d:1999.99;s:8:"quantity";i:5;}
+O:7:"Product":4:{s:4:"name";s:15:"Blue-ray Player";s:11:"description";s:17:"A really nice one";s:5:"price";d:123.43;s:8:"quantity";i:3;}
+O:7:"Product":4:{s:4:"name";s:12:"Leather Sofa";s:11:"description";s:36:"65'' super soft and fluffy and brown";s:5:"price";d:54323.32;s:8:"quantity";i:1;}
+O:7:"Product":4:{s:4:"name";s:34:"Legally Blonde Platinum Collection";s:11:"description";s:10:"2 disc set";s:5:"price";d:10;s:8:"quantity";i:392;}
