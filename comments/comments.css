@@ -1,0 +1,13 @@
+th, p {
+  font-family: sans-serif;
+  color: black;
+}
+
+table, tbody, th, td { 
+   border: 1px solid black; 
+  padding:3px 0px;
+  border: solid 1px #D1D8E1;
+  border-collapse: collapse;
+  padding: 5px 5px;
+  font-size: 13px;
+}
