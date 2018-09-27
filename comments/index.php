@@ -1,3 +1,11 @@
+<?php
+
+require_once 'Comments_Dao.php';
+$dao = new Comments_Dao();
+$comments = $dao->getComments();
+?>
+
+
 <html>
   <head>
     <link href="comments.css" type="text/css" rel="stylesheet" />
@@ -15,11 +23,9 @@
 
     <table>
 <?php
-    $comments = trim(file_get_contents("comments.txt"));
-    $lines = array_reverse(explode("\n", $comments));
-    foreach ($lines as $line) {
-      $elements = explode("|", $line);
-      echo "<tr><td>{$elements[0]}</td><td>{$elements[1]}</td></tr>";
+
+    foreach ($comments as $comment) {
+      echo "<tr><td>{$comment['name']}</td><td>{$comment['comment']}</td><td>{$comment['date_entered']}</td><td><a href='http://cs401/comments/delete.php?id={$comment['id']}'/>X</a></td></tr>";
     }
 ?>
     </table>
