@@ -1,6 +1,18 @@
+body {
+  margin-left: 30px;
+}
+
 th, p {
   font-family: sans-serif;
   color: black;
+}
+
+.message {
+  background-color: #B90000;
+  color: white;
+  padding: 10px 10;
+  margin-bottom: 5px;
+  width: 500px;
 }
 
 table, tbody, th, td { 
