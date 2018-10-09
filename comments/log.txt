@@ -1,0 +1,24 @@
+now - DEBUG --> Getting comments 
+now - DEBUG --> Getting comments 
+now - DEBUG --> Getting comments 
+now - DEBUG --> Getting comments 
+now - DEBUG --> Getting comments 
+now - DEBUG --> Getting comments 
+now - DEBUG --> Getting comments 
+now - DEBUG --> Getting comments 
+now - DEBUG --> Getting comments 
+now - DEBUG --> Getting comments 
+now - DEBUG --> Getting comments 
+now - DEBUG --> Getting comments 
+now - DEBUG --> Getting comments 
+now - DEBUG --> Getting comments 
+now - DEBUG --> Getting comments 
+now - INFO  --> Save comment [hey!] [i made it to the log file] 
+now - DEBUG --> Getting comments 
+now - INFO  --> Save comment [leave] [comment] 
+now - FATAL --> PDOException: SQLSTATE[HY000] [1045] Access denied for user 'ckenning'@'localhost' (using password: YES) in /Users/crk/projects/cs401/src/www/comments/Comments_Dao.php:19
+Stack trace:
+#0 /Users/crk/projects/cs401/src/www/comments/Comments_Dao.php(19): PDO->__construct('mysql:host=loca...', 'ckenning', 'passwor')
+#1 /Users/crk/projects/cs401/src/www/comments/Comments_Dao.php(28): Comments_Dao->getConnection()
+#2 /Users/crk/projects/cs401/src/www/comments/index.php(13): Comments_Dao->getComments()
+#3 {main} 
