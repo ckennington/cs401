@@ -26,20 +26,21 @@ class Comments_Dao {
   public function getComments () {
     $this->log->LogDebug("Getting comments");
     $conn = $this->getConnection();
-    return $conn->query("select id, name, comment, date_entered from comment order by date_entered desc", PDO::FETCH_ASSOC);
+    return $conn->query("select id, image_path, name, comment, date_entered from comment order by date_entered desc", PDO::FETCH_ASSOC);
   }
 
-  public function saveComment ($name, $comment) {
+  public function saveComment ($name, $comment, $path) {
     $this->log->LogInfo("Save comment [{$name}] [{$comment}]");
     $conn = $this->getConnection();
     $saveQuery =
         "INSERT INTO comment
-        (name, comment)
+        (name, comment, image_path)
         VALUES
-        (:name, :comment)";
+        (:name, :comment, :image_path)";
     $q = $conn->prepare($saveQuery);
     $q->bindParam(":name", $name);
     $q->bindParam(":comment", $comment);
+    $q->bindParam(":image_path", $path);
     $q->execute();
   }
 
