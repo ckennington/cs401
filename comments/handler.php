@@ -5,7 +5,7 @@ $comment = $_POST['comment'];
 
 $_SESSION['presets']['name'] = $name;
 $_SESSION['presets']['comment'] = $comment;
-
+/*
 $imagePath = '';
 if (count($_FILES) > 0) {
   if ($_FILES["pic"]["error"] > 0) {
@@ -18,6 +18,7 @@ if (count($_FILES) > 0) {
     }
   }
 }
+ */
 
 $messages = array();
 $presets = array();

@@ -14,12 +14,8 @@ class Comments_Dao {
   }
 
   public function getConnection () {
-    try {
        $conn= new PDO("mysql:host={$this->host};dbname={$this->db}", $this->user,
           $this->pass);
-    } catch (Exception $e) {
-       $this->log->LogFatal($e);
-    }
     return $conn;
   }
 

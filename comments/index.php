@@ -17,11 +17,14 @@ $comments = $dao->getComments();
 <html>
   <head>
     <link href="comments.css" type="text/css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/comment.js"></script>
   </head>
   <body>
     <h1>Comments</h1><a href="logout.php">Logout</a>
-    <h2>Leave a Comment</h2>
+    <h2 id="subtitle">Leave a Comment</h2>
 
+    <button id="hello" type="button">Hello There!</button>
 <?php if (isset($_SESSION['messages'])) {
   foreach ($_SESSION['messages'] as $message) {?>
       <div class="message <?php echo isset($_SESSION['validated']) ? $_SESSION['validated'] : '';?>"><?php
