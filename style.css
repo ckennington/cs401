@@ -1,53 +1,38 @@
-th, p {
-  font-family: sans-serif;
-  color: black;
+body {
+  background-color: #CCCCCC;
 }
 
-table, tbody, th, td { 
-   border: 1px solid black; 
-  padding:3px 0px;
-  border: solid 1px #D1D8E1;
-  border-collapse: collapse;
-  padding: 5px 5px;
-  font-size: 13px;
+#blue_highlight {
+  background-color: blue;
 }
-
 
 .highlight {
   background-color: yellow;
 }
-
-#link {
-  background-color: orange;
+table, td, th { 
+  border: 2px solid black; 
+}
+table { 
+  border-collapse: collapse; 
 }
 
-.names {
-  background-color: blue;
-}
 
-.green_text {
-  color: green;
-
-}
-
-span {
-  font-size: 30px;
-}
-
-ol { list-style-type: lower-roman; }
-
-/* this is the front page */
-h1 {
-  font-family: Helvetica, sans-serif; 
-
-}
-
-h1:hover {
-  background-color: green;
+.big {
   font-size: 50px;
 }
 
-th {
-  font-size: 20px;
+h1 {
+  font-family: Helvetica;
+  font-size: 40px;
+}
+h1:hover { 
+  color: #FF00FF; 
+  visibility:hidden;
 }
 
+p {
+  line-height: 30px;
+  border: 2px black dotted;
+  padding: 20px 5px;
+  margin-bottom: 40px;
+}

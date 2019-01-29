@@ -1,5 +1,0 @@
-Name|Pokemon
-Daniele|Picachu
-Stephanie|Charzar
-Taylor|Bulbazor
-Brady|Jigglypuff
