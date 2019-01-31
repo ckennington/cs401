@@ -1,0 +1,21 @@
+div {
+  float: left;
+}
+
+#box1 {
+  visibility: hidden;
+  background-color: red; 
+  width: 100px;
+  height: 100px;
+  margin: 10px 10px;
+  text-align: center;
+  line-height: 100px;
+}
+#box2 {
+  background-color: blue; 
+  width: 100px;
+  height: 100px;
+  margin: 10px 10px;
+  text-align: center;
+  line-height: 100px;
+}
