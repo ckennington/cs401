@@ -15,7 +15,7 @@
    $comments = $dao->getComments();
    echo "<table id='comments'>";
    foreach ($comments as $comment) {
-     echo "<tr><td>{$comment['comment']}</td><td>{$comment['date_created']}</td></tr>";
+     echo "<tr><td>" . htmlspecialchars($comment['comment']) . "</td><td>{$comment['date_created']}</td></tr>";
    }
 
    echo "</table>";
