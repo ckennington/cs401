@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <html>
   <head>
     <link rel="stylesheet" href="comments.css">
@@ -7,6 +11,14 @@
     <form method="post" action="comment_handler.php">
       <div>comment: <input type="text" name="comment"></div>
       <div><input type="submit" value="Submit"></div>
+      <?php
+      if (isset($_SESSION['message'])) {
+        $sentiment = (isset($_SESSION['good']) && ($_SESSION['good'])) ? "good" : "bad";
+        echo "<div class='" . $sentiment . "' id='message'>" . $_SESSION['message'] . "</div>";
+      }
+      unset($_SESSION['message']);
+      ?>
+
     </form>
 
    <?php

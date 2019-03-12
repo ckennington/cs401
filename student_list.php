@@ -1,8 +1,21 @@
 <?php
+session_start();
+if (!isset($_SESSION['logged_in']) || !$_SESSION['logged_in']) {
+  $_SESSION['message'] = "Please log in.";
+  header("Location: login.php");
+  exit();
+}
+
 $whole_file = trim(file_get_contents('students.dat'));
 $students = explode("\n", $whole_file);
 
 ?>
+<html>
+  <head>
+    <link rel="stylesheet" href="login.css">
+  </head>
+<body>
+<span id="logout"><a href="logout.php">Logout</a></span>
 <ul>
 <?php
 foreach ($students as $student) {
@@ -14,3 +27,6 @@ foreach ($students as $student) {
   }
 ?>
 </ul>
+</body>
+</html>
+
