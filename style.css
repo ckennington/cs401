@@ -2,6 +2,26 @@ body {
   background-color: #CCCCCC;
 }
 
+div {
+  margin-bottom:10px;
+}
+
+.message {
+  width: 300px;
+  padding: 10 10;
+  margin: 10 10;
+  color: white;
+}
+
+.good {
+  background-color: green;
+}
+
+.bad {
+  background-color: red;
+}
+
+
 #blue_highlight {
   background-color: blue;
 }
