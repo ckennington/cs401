@@ -34,6 +34,20 @@ class Dao {
 
   public function getUser ($userName) {
     $conn = $this->getConnection();
+    return $conn->query("select *  from user where user_name = {$userName}", PDO::FETCH_ASSOC);
+  }
+
+  public function createUser ($userName, $password, $imagePath) {
+    $conn = $this->getConnection();
+    $saveQuery = "insert into user (name, email, age, password, image_path) values (:name, :email, :age, :password, :image_path)";
+    $q = $conn->prepare($saveQuery);
+    $age = "18";
+    $q->bindParam(":name", $userName);
+    $q->bindParam(":email", $userName);
+    $q->bindParam(":age", $age);
+    $q->bindParam(":password", $password);
+    $q->bindParam(":image_path", $imagePath);
+    $q->execute();
   }
 
   public function saveComment ($comment) {
