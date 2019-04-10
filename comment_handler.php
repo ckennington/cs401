@@ -12,7 +12,7 @@ if (64 < strlen($comment)) {
 if (0 >= strlen($comment)) {
   $_SESSION['good'] = false;
   $_SESSION['message'] = "Please enter a comment";
-  header("Location: comment.php");
+  //header("Location: comment.php");
   exit;
 }
 
@@ -22,5 +22,5 @@ $dao->saveComment($comment);
 
 $_SESSION['message'] = "Thanks for posting!";
 $_SESSION['good'] = true;
-header('Location: comment.php');
+//header('Location: comment.php');
 exit;

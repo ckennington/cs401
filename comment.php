@@ -5,16 +5,20 @@ session_start();
 <html>
   <head>
     <link rel="stylesheet" href="comments.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="js/comments.js"></script>
+    <script src="js/ajax.js"></script>
   </head>
   <body>
     <h1>Comments</h1>
-    <form method="post" action="comment_handler.php">
-      <div>comment: <input type="text" name="comment"></div>
+    <form id="form">
+      <div>comment: <input type="text" id="comment" name="comment"></div>
       <div><input type="submit" value="Submit"></div>
       <?php
       if (isset($_SESSION['message'])) {
         $sentiment = (isset($_SESSION['good']) && ($_SESSION['good'])) ? "good" : "bad";
-        echo "<div class='" . $sentiment . "' id='message'>" . $_SESSION['message'] . "</div>";
+        echo "<div class='" . $sentiment . "' id='message'>" . $_SESSION['message'] . "<span class='close'>X</span></div>";
       }
       unset($_SESSION['message']);
       ?>

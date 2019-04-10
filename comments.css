@@ -9,11 +9,23 @@ table {
   border-collapse: collapse; 
 }
 
+.close {
+  float:right;
+  position: relative;
+  top: -8px;
+  right: -5px;
+  cursor:pointer;
+}
+
 #message {
   width: 300px;
   padding: 10 10;
   margin: 10 10;
   color: white;
+}
+
+.disappear {
+  visibility:hidden;
 }
 
 .good {
