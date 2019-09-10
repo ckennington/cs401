@@ -1,0 +1,36 @@
+/* header  */
+h1 {
+  color : blue;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 50px;
+}
+
+h1:hover {
+  color: green;
+}
+
+span {
+  padding: 5px 10px;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+#red {
+  background-color: red;
+}
+
+#blue {
+  background-color: blue;
+}
+
+div {
+   padding: 0px 100px;
+   line-height: 2em;
+}
+
+body {
+  background-color: #EEEEEE;
+}
