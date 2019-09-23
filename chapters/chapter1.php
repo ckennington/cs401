@@ -1,16 +1,14 @@
 <html>
   <head>
     <title>harry potter</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
   </head>
   <body>
     <hr/>
     <h1>Harry Potter</h1>
-    <ul id="navbar">
-      <li><a href="chapter1.html">Chapter 1</a></li>
-      <li><a href="chapter2.html">Chapter 2</a></li>
-      <li><a href="chapter3.html">Chapter 3</a></li>
-    </ul>
+    <?php
+    require_once "navbar.php";
+    ?>
     <h2>Chapter 1</h2>
     <div>
     <p>Mr. and Mrs. Dursley, of number four, Privet Drive, were 
