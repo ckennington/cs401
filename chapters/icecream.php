@@ -1,3 +1,8 @@
+<?php
+   require_once 'Render.php';
+   require_once 'Dao.php';
+   $dao = new Dao('icecream.data');
+?>
 <html>
   <head>
     <title>harry potter</title>
@@ -12,8 +17,8 @@
     <h2>Favorite Icecream</h2>
     <div>
     <?php
-       require_once 'functions.php';
-       renderTable("icecream.data");
+       $render = new Render();
+       $render->renderTable($dao->getIcecreamData());
     ?>
     </div>
 
