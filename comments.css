@@ -1,0 +1,18 @@
+h1 {
+  font-family: helvetica;
+  margin: 20 10;
+}
+
+input {
+  margin-left: 20px;
+}
+
+table {
+  margin-left: 50px;
+  border-collapse: collapse;
+}
+
+table > tr, td {
+  border: solid 1px #111;
+  padding: 10 10;
+}
