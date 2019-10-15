@@ -1,30 +1,40 @@
 <?php
    session_start();
 
-   $errors = array();
+   $messages = array();
+   $presets = $_POST;
+   $sentiment = '';
 
    $age = $_POST['age'];
    if (!is_numeric($age)) {
-     $errors[] = "NOT AN AGE!";
+     $messages[] = "NOT AN AGE!";
+     unset($presets['age']);
    }
 
    if (is_numeric($age) && $age < 12) {
-     $errors[] = "NOT OLD ENOUGH!!";
+     $messages[] = "NOT OLD ENOUGH!!";
+     unset($presets['age']);
    }
 
    if (empty($_POST['comment'])) {
-     $errors[] = "Please leave a comment. THANKS!";
+     $messages[] = "Please leave a comment. THANKS!";
+     unset($presets['comment']);
    }
 
-   if (count($errors) > 0) {
-     $_SESSION['errors'] = $errors;
+   if (count($messages) > 0) {
+     $_SESSION['messages'] = $messages;
+     $_SESSION['form_data'] = $presets;
+     $_SESSION['sentiment'] = 'bad';
      header("Location: http://cs401/comments.php");
      exit;
    }
-   unset($_SESSION['errors']);
+   unset($_SESSION['messages']);
+   unset($_SESSION['form_data']);
 
    require_once 'Dao.php';
    $dao = new Dao();
    $dao->saveComment($_POST['comment']);
+   $_SESSION['messages'] = array("Your comment has been posted");
+   $_SESSION['sentiment'] = 'good';
    header("Location: http://cs401/comments.php");
 ?>

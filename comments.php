@@ -1,8 +1,6 @@
 <?php
 session_start();
-setcookie("fun", "cookie");
-echo print_r($_COOKIE,1);
-
+echo print_r($_SESSION,1);
 ?>
 
 <html>
@@ -13,15 +11,15 @@ echo print_r($_COOKIE,1);
     <h1>Leave a comment</h1>
     <form action="comment_handler.php" method="post">
       <div>What's your age?</div>
-      <input type="text" name="age">
+      <input value="<?php echo $_SESSION['form_data']['age']; ?>" type="text" name="age">
       <div>Leave a comment</div>
-      <input type="text" name="comment">
+      <input value="<?php echo $_SESSION['form_data']['comment'] ?>" type="text" name="comment">
       <input type="submit">
     </form>
     <?php
-    if (isset($_SESSION['errors'])) {
-       foreach ($_SESSION['errors'] as $error) {
-         echo "<div class='error'>{$error}</div>";
+    if (isset($_SESSION['messages'])) {
+       foreach ($_SESSION['messages'] as $message) {
+         echo "<div class='message {$_SESSION['sentiment']}'>{$message}</div>";
        }
     }
 

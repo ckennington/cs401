@@ -1,10 +1,16 @@
 <?php
+require_once 'KLogger.php';
 class Dao {
 
   private $host = 'localhost';
   private $dbname = 'ckenning';
   private $username = 'ckenning';
   private $password = 'password';
+  private $logger;
+
+  public function __construct() {
+    $this->logger = new KLogger ( "log.txt" , KLogger::DEBUG );
+  }
 
   public function getConnection() {
     try {
@@ -19,7 +25,7 @@ class Dao {
   public function getComments() {
     $conn = $this->getConnection();
     try {
-    return $conn->query("select comment_id, comment, date_entered  from comment order by date_entered asc", PDO::FETCH_ASSOC);
+    return $conn->query("select comment_id, comment, date_entered  from comment order by date_entered desc", PDO::FETCH_ASSOC);
     } catch(Exception $e) {
       echo print_r($e,1);
       exit;
@@ -28,6 +34,7 @@ class Dao {
   }
 
   public function saveComment ($comment) {
+    $this->logger->LogInfo("saving a comment [{$comment}]");
     $conn = $this->getConnection();
     $saveQuery = "insert into comment (comment) values (:comment)";
     $q = $conn->prepare($saveQuery);

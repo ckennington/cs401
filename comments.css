@@ -3,19 +3,19 @@ h1 {
   margin: 20 10;
 }
 
-.error {
-  background-color:red;
+.message {
   color: white;
   padding: 10 10;
   margin: 5 50;
   width: 40%;
 }
-.message {
+
+.bad {
   background-color:red;
-  color: white;
-  padding: 10 10;
-  margin: 5 50;
-  width: 40%;
+}
+
+.good {
+  background-color:green;
 }
 
 input {

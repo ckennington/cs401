@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 ?>
 <html>
   <head>
@@ -9,7 +8,7 @@ session_start();
   <body>
 <?php
 if (isset($_SESSION['message'])) {
-   echo "<div class='message'>{$_SESSION['message']}</div>";
+   echo "<div class='message bad'>{$_SESSION['message']}</div>";
 }
 ?>
     <form method="POST" action="login_handler.php">
