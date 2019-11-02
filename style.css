@@ -25,10 +25,15 @@
 }
 
 h1 {
+
   color : blue;
   text-align: center;
-  font-family: Helvetica;
+  font-family: 'Amatic SC', cursive;
   font-size: 50px;
+}
+
+p {
+  font-family: 'Playfair Display', serif;
 }
 
 h2 {

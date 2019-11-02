@@ -10,7 +10,7 @@ echo print_r($_SESSION,1);
   <body>
     <h1>Leave a comment</h1>
     <form action="comment_handler.php" method="post">
-      <div>What's your age?</div>
+      <div><label for="email">What's your age?</div>
       <input value="<?php echo $_SESSION['form_data']['age']; ?>" type="text" name="age">
       <div>Leave a comment</div>
       <input value="<?php echo $_SESSION['form_data']['comment'] ?>" type="text" name="comment">
