@@ -6,6 +6,8 @@ echo print_r($_SESSION,1);
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="comments.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/comments.js" type="text/javascript"></script>
   </head>
   <body>
     <h1>Leave a comment</h1>
@@ -19,7 +21,7 @@ echo print_r($_SESSION,1);
     <?php
     if (isset($_SESSION['messages'])) {
        foreach ($_SESSION['messages'] as $message) {
-         echo "<div class='message {$_SESSION['sentiment']}'>{$message}</div>";
+         echo "<div class='message {$_SESSION['sentiment']}'>{$message}<span class='close'>x</span></div>";
        }
     }
 
