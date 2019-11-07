@@ -1,21 +1,22 @@
 <?php
 session_start();
-echo print_r($_SESSION,1);
+//echo print_r($_SESSION,1);
 ?>
 
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="comments.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/comments.js" type="text/javascript"></script>
+    <!--<script src="js/comments.js" type="text/javascript"></script>-->
+    <script src="js/ajax.js"></script>
   </head>
   <body>
     <h1>Leave a comment</h1>
-    <form action="comment_handler.php" method="post">
+    <form id="comment_form">
       <div><label for="email">What's your age?</div>
       <input value="<?php echo $_SESSION['form_data']['age']; ?>" type="text" name="age">
       <div>Leave a comment</div>
-      <input value="<?php echo $_SESSION['form_data']['comment'] ?>" type="text" name="comment">
+      <input id="comment" value="<?php echo $_SESSION['form_data']['comment'] ?>" type="text" name="comment">
       <input type="submit">
     </form>
     <?php
@@ -30,7 +31,7 @@ echo print_r($_SESSION,1);
        require_once 'Dao.php';
        $dao = new Dao();
        $comments = $dao->getComments();
-       echo "<table>";
+       echo "<table id='comments'>";
        foreach($comments as $comment) {
          echo "<tr><td>" . htmlspecialchars($comment['comment']) . "</td>" .
            "<td>{$comment['date_entered']}" .

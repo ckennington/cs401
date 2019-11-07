@@ -36,5 +36,6 @@
    $dao->saveComment($_POST['comment']);
    $_SESSION['messages'] = array("Your comment has been posted");
    $_SESSION['sentiment'] = 'good';
-   header("Location: http://cs401/comments.php");
+   sleep(3);
+   //header("Location: http://cs401/comments.php");
 ?>
