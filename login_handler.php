@@ -17,8 +17,9 @@ $logger->LogDebug("Clearing the session array");
 $_SESSION = array();
 if ($valid) {
    $_SESSION['logged_in'] = true;
+   $_SESSION['username'] = $username;
    $logger->LogInfo("User login successful [{$username}]");
-   header("Location: http://cs401/granted.php");
+   header("Location: http://cs401/comments.php");
    exit;
 } else {
    $logger->LogWarn("User login failed [{$username}]");
