@@ -1,3 +1,7 @@
+<?php
+  require_once 'Dao.php';
+  $dao = new Dao();
+?>
 <html>
   <head>
     <title>Leave a comment</title>
@@ -13,16 +17,16 @@
     <table>
       <thead>
         <tr>
-          <th>Username</th>
           <th>Comment</th>
+          <th>Date Entered</th>
+          <th>delete</th>
        </tr>
       </thead>
       <tbody>
       <?php
-      $lines = array_reverse(explode("\n", trim(file_get_contents ("comments.dat"))));
+      $lines = $dao->getComments();
       foreach ($lines as $line) {
-        list($username, $comment) = explode("|", $line);
-        echo "<tr><td>{$username}</td><td>{$comment}</td></tr>";
+        echo "<tr><td>{$line['comment']}</td><td>{$line['date_entered']}</td><td class='delete'><a href='delete_comment.php?id={$line['comment_id']}'>X</a></td></tr>";
       }
       ?>
       </tbody>
