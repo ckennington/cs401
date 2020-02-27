@@ -2,6 +2,13 @@ div {
   margin: 10 10;
 }
 
+#error {
+  background-color: red;
+  color: white;
+  padding: 10px 15px;
+  width: 300px;
+}
+
 .delete {
   color: red;
 }

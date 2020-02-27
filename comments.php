@@ -1,4 +1,5 @@
 <?php
+  session_start();
   require_once 'Dao.php';
   $dao = new Dao();
 ?>
@@ -14,6 +15,11 @@
         <div>Comment: <input type="text" id="comment" name="comment"></div>
         <input type="submit" value="Submit">
     </form>
+    <?php
+    if (isset($_SESSION['error'])) {
+      echo "<div id='error'>{$_SESSION['error']}</div>";
+      unset($_SESSION['error']);
+    } ?>
     <table>
       <thead>
         <tr>
@@ -26,7 +32,7 @@
       <?php
       $lines = $dao->getComments();
       foreach ($lines as $line) {
-        echo "<tr><td>{$line['comment']}</td><td>{$line['date_entered']}</td><td class='delete'><a href='delete_comment.php?id={$line['comment_id']}'>X</a></td></tr>";
+        echo "<tr><td>" . $line['comment'] . "</td><td>{$line['date_entered']}</td><td class='delete'><a href='delete_comment.php?id={$line['comment_id']}'>X</a></td></tr>";
       }
       ?>
       </tbody>
