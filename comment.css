@@ -2,6 +2,10 @@ div {
   margin: 10 10;
 }
 
+#logout {
+  float:right;
+}
+
 #error {
   background-color: red;
   color: white;
