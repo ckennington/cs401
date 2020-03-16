@@ -30,19 +30,20 @@ class Dao {
       return;
     }
     try {
-    return $conn->query("select comment_id, comment, date_entered  from comment order by date_entered desc", PDO::FETCH_ASSOC);
+      return $conn->query("select image, comment_id, comment, date_entered  from comment order by date_entered desc", PDO::FETCH_ASSOC);
     } catch(Exception $e) {
       echo print_r($e,1);
       exit;
     }
   }
 
-  public function saveComment ($comment) {
+  public function saveComment ($comment, $destination) {
     $this->logger->LogDebug("Saving a comment [{$comment}]");
     $conn = $this->getConnection();
-    $saveQuery = "insert into comment (comment) values (:comment)";
+    $saveQuery = "insert into comment (comment, image) values (:comment, :destination)";
     $q = $conn->prepare($saveQuery);
     $q->bindParam(":comment", $comment);
+    $q->bindParam(":destination", $destination);
     $q->execute();
   }
 

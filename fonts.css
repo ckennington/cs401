@@ -1,0 +1,18 @@
+body {
+  padding: 20px 20px;
+  font-family: Helvetica;
+}
+
+p {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+h1 {
+  font-size: 100px;
+  font-family: 'Bangers', cursive;
+  font-weight: 100;
+}
+
