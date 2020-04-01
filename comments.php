@@ -19,6 +19,8 @@
 ?>
 <html>
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/comments.js"></script>
     <title>Leave a comment</title>
     <link rel="stylesheet" type="text/css" href="comment.css">
   </head>
@@ -34,7 +36,7 @@
     <?php
     if (isset($_SESSION['errors'])) {
       foreach ($_SESSION['errors'] as $error) {
-         echo "<div id='error'>{$error}</div>";
+        echo "<div class='error'>{$error}<span class='close_error'>X</span></div>";
       }
       unset($_SESSION['errors']);
     } ?>

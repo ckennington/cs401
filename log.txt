@@ -1,0 +1,4 @@
+2020-04-01 3:32:51 - ERROR --> Couldn't connect to the database: SQLSTATE[HY000] [2002] No such file or directory 
+2020-04-01 3:32:53 - ERROR --> Couldn't connect to the database: SQLSTATE[HY000] [2002] No such file or directory 
+2020-04-01 3:33:50 - INFO  --> deleting a comment with id [75] 
+2020-04-01 3:40:44 - INFO  --> deleting a comment with id [52] 

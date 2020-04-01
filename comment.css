@@ -6,7 +6,16 @@ div {
   float:right;
 }
 
-#error {
+.close_error {
+  float:right;
+}
+
+.close_error:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.error {
   background-color: red;
   color: white;
   padding: 10px 15px;
