@@ -1,9 +1,9 @@
 <?php
-session_start();
+  //session_start();
 
   //echo "<pre>" . print_r($_FILES,1) . "</pre>";
   //exit;
-
+  /*
   $errors = array();
 
   // validate
@@ -36,9 +36,10 @@ session_start();
   }
 
   unset($_SESSION['form']);
+   */
 
   require_once 'Dao.php';
   $dao = new Dao();
   $dao->saveComment($_POST['comment'], $relative_path);
-  header("Location: http://cs401/comments.php");
+  //header("Location: http://cs401/comments.php");
   exit;

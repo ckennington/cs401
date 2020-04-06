@@ -21,13 +21,15 @@
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/comments.js"></script>
+    <script src="js/ajax.js"></script>
     <title>Leave a comment</title>
     <link rel="stylesheet" type="text/css" href="comment.css">
   </head>
   <body>
     <div id="logout"><a href="http://cs401/logout.php">logout</a></div>
     <h1>Leave a Comment</h1>
-    <form method="POST" action="comment_handler.php" enctype="multipart/form-data">
+    <!--<form method="POST" action="comment_handler.php" enctype="multipart/form-data">-->
+    <form id="comment_form" enctype="multipart/form-data">
       <div>Name: <input value="<?php echo $name_preset; ?>" type="text" id="username" name="username"></div>
       <div>Comment: <input value="<?php echo $comment_preset; ?>" type="text" id="comment" name="comment"></div>
       <div>Upload image: <input type="file" id="img" name="img" accept="image/*"></div>
@@ -40,7 +42,7 @@
       }
       unset($_SESSION['errors']);
     } ?>
-    <table>
+    <table id="comments">
       <thead>
         <tr>
           <th>Image</th>
@@ -59,6 +61,7 @@
            echo "<tr><td><img src='" . $line['image'] . "'/></td><td>" . $line['comment'] . "</td><td>{$line['date_entered']}</td><td class='delete'><a href='delete_comment.php?id={$line['comment_id']}'>X</a></td></tr>";
           }
       }
+      sleep(2);
       ?>
       </tbody>
     </table>
