@@ -1,0 +1,57 @@
+body {
+  background-color: #EDEDED;
+}
+
+h1, h2, h3 {
+  width: 50%;
+  min-width: 590px;
+  margin: 10 auto;
+}
+
+h1 {
+  color: #444444;
+  font-family: Helvetica;
+  font-size: 30px;
+  border: 1px black dotted;
+}
+
+h2  {
+  padding-top: 15px;
+  color: blue;
+}
+
+p {
+  line-height: 25px;
+}
+
+span {
+   color: #FF0000;
+}
+
+span:hover {
+  background-color: green;
+}
+
+#street {
+   color: #0000FF;
+}
+
+.highlight {
+  color: black;
+  background-color: yellow;
+  text-decoration: underline;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 15 0;
+}
+
+
+table, th, td {
+  border: 5px solid red;
+}
+
+td {
+  padding: 5 3;
+}
