@@ -1,0 +1,26 @@
+input {
+  margin: 5 5;
+  height: 40px;
+  font-size:14px;
+  border-radius:0.5em;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 15 0;
+}
+
+
+table, th, td {
+  border: 3px solid #CDCDCD;
+  font-size: 30px;
+}
+
+th {
+  background-color: #AAAAAA;
+}
+
+td {
+  font-size: 30px;
+  padding: 10 13;
+}

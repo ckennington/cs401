@@ -3,6 +3,14 @@
   <body>
   <?php
 
+    $x = 8;
+    $y = "8";
+    if ($x === $y) {
+      echo "THEY ARE EQUAL</br>";
+    } else {
+      echo "THEY ARE NOT EQUAL</br>";
+    }
+
 
      print "<pre>" . print_r($_GET, true) . "</pre>";
 

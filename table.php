@@ -1,17 +1,22 @@
 <?php
 
-function renderTable ($fileName) {
+function renderTable ($fileName, $search = "") {
   $contents = trim(file_get_contents($fileName));
-  $lines = explode("\n", $contents);
+  $data = explode("\n", $contents);
+  $lines = array_reverse($data);
+  if (count($lines) == 1) {
+    echo "No comments yet";
+    exit;
+  }
   ?>
   <table>
     <thead>
-      <th>Name</th><th>Contribution</th>
+      <th>Name</th><th>Comment</th>
     </thead>
    <?php
     foreach ($lines as $line) {
-      list($name, $contribution) = explode("|", $line);
-      echo "<tr><td>{$name}</td><td>{$contribution}</td></tr>";
+      list($name, $comment) = explode("|", $line);
+      echo "<tr><td>{$name}</td><td>{$comment}</td></tr>";
     }
    ?>
   </table>
