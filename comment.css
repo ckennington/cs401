@@ -18,9 +18,14 @@ table, th, td {
 
 th {
   background-color: #AAAAAA;
+  padding: 10 13;
 }
 
 td {
   font-size: 30px;
   padding: 10 13;
+}
+
+.delete {
+  text-align:center;
 }
