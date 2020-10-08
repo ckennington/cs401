@@ -1,0 +1,251 @@
+1602116475 - DEBUG --> getting a connection 
+1602116774 - DEBUG --> getting a connection 
+1602116778 - DEBUG --> getting a connection 
+1602116779 - DEBUG --> getting a connection 
+1602116780 - DEBUG --> getting a connection 
+1602116781 - DEBUG --> getting a connection 
+1602116882 - INFO  --> adding a comment [Smash that like button] 
+1602116882 - DEBUG --> getting a connection 
+1602116882 - DEBUG --> getting a connection 
+1602117036 - INFO  --> User entered invalid age [efg23423bg] 
+1602117066 - DEBUG --> getting a connection 
+1602117584 - FATAL --> Ooops the database crapped its pants: PDOException Object
+(
+    [message:protected] => SQLSTATE[HY000] [2002] No such file or directory
+    [string:Exception:private] => 
+    [code:protected] => 2002
+    [file:protected] => /Users/crk/projects/cs401/src/www/Dao.php
+    [line:protected] => 20
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/Dao.php
+                    [line] => 20
+                    [function] => __construct
+                    [class] => PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => mysql:host=localhost;dbname=ckenning
+                            [1] => ckenning
+                            [2] => password
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/Dao.php
+                    [line] => 30
+                    [function] => getConnection
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/table.php
+                    [line] => 6
+                    [function] => getComments
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/comments.php
+                    [line] => 18
+                    [function] => renderTable
+                    [args] => Array
+                        (
+                            [0] => comments.txt
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => 
+    [xdebug_message] => <tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/crk/projects/cs401/src/www/Dao.php on line <i>20</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0002</td><td bgcolor='#eeeeec' align='right'>362368</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/Users/crk/projects/cs401/src/www/comments.php' bgcolor='#eeeeec'>.../comments.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0009</td><td bgcolor='#eeeeec' align='right'>390336</td><td bgcolor='#eeeeec'>renderTable(  )</td><td title='/Users/crk/projects/cs401/src/www/comments.php' bgcolor='#eeeeec'>.../comments.php<b>:</b>18</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0010</td><td bgcolor='#eeeeec' align='right'>391624</td><td bgcolor='#eeeeec'>Dao->getComments(  )</td><td title='/Users/crk/projects/cs401/src/www/table.php' bgcolor='#eeeeec'>.../table.php<b>:</b>6</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0010</td><td bgcolor='#eeeeec' align='right'>391624</td><td bgcolor='#eeeeec'>Dao->getConnection(  )</td><td title='/Users/crk/projects/cs401/src/www/Dao.php' bgcolor='#eeeeec'>.../Dao.php<b>:</b>30</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.0010</td><td bgcolor='#eeeeec' align='right'>391984</td><td bgcolor='#eeeeec'><a href='http://www.php.net/PDO.construct' target='_new'>__construct</a>
+(  )</td><td title='/Users/crk/projects/cs401/src/www/Dao.php' bgcolor='#eeeeec'>.../Dao.php<b>:</b>20</td></tr>
+
+)
+ 
+1602118023 - FATAL --> Ooops the database crapped its pants: PDOException Object
+(
+    [message:protected] => SQLSTATE[HY000] [1045] Access denied for user 'ckenning'@'localhost' (using password: YES)
+    [string:Exception:private] => 
+    [code:protected] => 1045
+    [file:protected] => /Users/crk/projects/cs401/src/www/Dao.php
+    [line:protected] => 20
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/Dao.php
+                    [line] => 20
+                    [function] => __construct
+                    [class] => PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => mysql:host=localhost;dbname=ckenning
+                            [1] => ckenning
+                            [2] => passwor
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/Dao.php
+                    [line] => 30
+                    [function] => getConnection
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/table.php
+                    [line] => 6
+                    [function] => getComments
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/comments.php
+                    [line] => 18
+                    [function] => renderTable
+                    [args] => Array
+                        (
+                            [0] => comments.txt
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => 
+    [xdebug_message] => <tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> PDOException: SQLSTATE[HY000] [1045] Access denied for user 'ckenning'@'localhost' (using password: YES) in /Users/crk/projects/cs401/src/www/Dao.php on line <i>20</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0010</td><td bgcolor='#eeeeec' align='right'>362368</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/Users/crk/projects/cs401/src/www/comments.php' bgcolor='#eeeeec'>.../comments.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0022</td><td bgcolor='#eeeeec' align='right'>390328</td><td bgcolor='#eeeeec'>renderTable(  )</td><td title='/Users/crk/projects/cs401/src/www/comments.php' bgcolor='#eeeeec'>.../comments.php<b>:</b>18</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0025</td><td bgcolor='#eeeeec' align='right'>391616</td><td bgcolor='#eeeeec'>Dao->getComments(  )</td><td title='/Users/crk/projects/cs401/src/www/table.php' bgcolor='#eeeeec'>.../table.php<b>:</b>6</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0025</td><td bgcolor='#eeeeec' align='right'>391616</td><td bgcolor='#eeeeec'>Dao->getConnection(  )</td><td title='/Users/crk/projects/cs401/src/www/Dao.php' bgcolor='#eeeeec'>.../Dao.php<b>:</b>30</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.0025</td><td bgcolor='#eeeeec' align='right'>391976</td><td bgcolor='#eeeeec'><a href='http://www.php.net/PDO.construct' target='_new'>__construct</a>
+(  )</td><td title='/Users/crk/projects/cs401/src/www/Dao.php' bgcolor='#eeeeec'>.../Dao.php<b>:</b>20</td></tr>
+
+)
+ 
+1602118144 - FATAL --> Ooops the database crapped its pants: PDOException Object
+(
+    [message:protected] => SQLSTATE[HY000] [1045] Access denied for user 'ckenning'@'localhost' (using password: YES)
+    [string:Exception:private] => 
+    [code:protected] => 1045
+    [file:protected] => /Users/crk/projects/cs401/src/www/Dao.php
+    [line:protected] => 20
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/Dao.php
+                    [line] => 20
+                    [function] => __construct
+                    [class] => PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => mysql:host=localhost;dbname=ckenning
+                            [1] => ckenning
+                            [2] => passwor
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/Dao.php
+                    [line] => 30
+                    [function] => getConnection
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/table.php
+                    [line] => 6
+                    [function] => getComments
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/comments.php
+                    [line] => 18
+                    [function] => renderTable
+                    [args] => Array
+                        (
+                            [0] => comments.txt
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => 
+    [xdebug_message] => <tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> PDOException: SQLSTATE[HY000] [1045] Access denied for user 'ckenning'@'localhost' (using password: YES) in /Users/crk/projects/cs401/src/www/Dao.php on line <i>20</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0003</td><td bgcolor='#eeeeec' align='right'>362368</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/Users/crk/projects/cs401/src/www/comments.php' bgcolor='#eeeeec'>.../comments.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0015</td><td bgcolor='#eeeeec' align='right'>390968</td><td bgcolor='#eeeeec'>renderTable(  )</td><td title='/Users/crk/projects/cs401/src/www/comments.php' bgcolor='#eeeeec'>.../comments.php<b>:</b>18</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0017</td><td bgcolor='#eeeeec' align='right'>392256</td><td bgcolor='#eeeeec'>Dao->getComments(  )</td><td title='/Users/crk/projects/cs401/src/www/table.php' bgcolor='#eeeeec'>.../table.php<b>:</b>6</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0017</td><td bgcolor='#eeeeec' align='right'>392256</td><td bgcolor='#eeeeec'>Dao->getConnection(  )</td><td title='/Users/crk/projects/cs401/src/www/Dao.php' bgcolor='#eeeeec'>.../Dao.php<b>:</b>30</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.0017</td><td bgcolor='#eeeeec' align='right'>392616</td><td bgcolor='#eeeeec'><a href='http://www.php.net/PDO.construct' target='_new'>__construct</a>
+(  )</td><td title='/Users/crk/projects/cs401/src/www/Dao.php' bgcolor='#eeeeec'>.../Dao.php<b>:</b>20</td></tr>
+
+)
+ 
+1602118175 - DEBUG --> getting a connection 
+1602118175 - INFO  --> deleting a comment [5] 
+1602118175 - DEBUG --> getting a connection 
