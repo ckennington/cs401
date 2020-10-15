@@ -249,3 +249,223 @@
 1602118175 - DEBUG --> getting a connection 
 1602118175 - INFO  --> deleting a comment [5] 
 1602118175 - DEBUG --> getting a connection 
+1602721563 - DEBUG --> getting a connection 
+1602721606 - INFO  --> User entered invalid age [] 
+1602721689 - DEBUG --> getting a connection 
+1602721690 - INFO  --> User entered invalid age [] 
+1602721693 - DEBUG --> getting a connection 
+1602721757 - DEBUG --> getting a connection 
+1602721774 - DEBUG --> getting a connection 
+1602721799 - DEBUG --> getting a connection 
+1602721800 - DEBUG --> getting a connection 
+1602721800 - DEBUG --> getting a connection 
+1602721800 - DEBUG --> getting a connection 
+1602721800 - DEBUG --> getting a connection 
+1602721803 - DEBUG --> getting a connection 
+1602721804 - DEBUG --> getting a connection 
+1602721804 - DEBUG --> getting a connection 
+1602721804 - DEBUG --> getting a connection 
+1602721804 - DEBUG --> getting a connection 
+1602721804 - DEBUG --> getting a connection 
+1602721820 - DEBUG --> getting a connection 
+1602721839 - DEBUG --> getting a connection 
+1602721998 - DEBUG --> getting a connection 
+1602721999 - INFO  --> User entered invalid age [] 
+1602721999 - DEBUG --> getting a connection 
+1602722013 - INFO  --> adding a comment [] 
+1602722013 - DEBUG --> getting a connection 
+1602722013 - DEBUG --> getting a connection 
+1602722045 - DEBUG --> getting a connection 
+1602722048 - INFO  --> User entered invalid age [] 
+1602722048 - DEBUG --> getting a connection 
+1602722165 - DEBUG --> getting a connection 
+1602722167 - INFO  --> User entered invalid age [] 
+1602722167 - INFO  --> adding a comment [] 
+1602722167 - DEBUG --> getting a connection 
+1602722167 - DEBUG --> getting a connection 
+1602722169 - INFO  --> User entered invalid age [] 
+1602722169 - INFO  --> adding a comment [] 
+1602722169 - DEBUG --> getting a connection 
+1602722169 - DEBUG --> getting a connection 
+1602722170 - INFO  --> User entered invalid age [] 
+1602722170 - INFO  --> adding a comment [] 
+1602722170 - DEBUG --> getting a connection 
+1602722170 - DEBUG --> getting a connection 
+1602722208 - DEBUG --> getting a connection 
+1602722210 - INFO  --> User entered invalid age [] 
+1602722210 - INFO  --> adding a comment [] 
+1602722210 - DEBUG --> getting a connection 
+1602722210 - DEBUG --> getting a connection 
+1602722210 - INFO  --> User entered invalid age [] 
+1602722210 - INFO  --> adding a comment [] 
+1602722210 - DEBUG --> getting a connection 
+1602722211 - DEBUG --> getting a connection 
+1602722211 - INFO  --> User entered invalid age [] 
+1602722211 - INFO  --> adding a comment [] 
+1602722211 - DEBUG --> getting a connection 
+1602722211 - DEBUG --> getting a connection 
+1602722211 - INFO  --> User entered invalid age [] 
+1602722211 - INFO  --> adding a comment [] 
+1602722211 - DEBUG --> getting a connection 
+1602722211 - DEBUG --> getting a connection 
+1602722211 - INFO  --> User entered invalid age [] 
+1602722211 - INFO  --> adding a comment [] 
+1602722211 - DEBUG --> getting a connection 
+1602722211 - DEBUG --> getting a connection 
+1602722229 - INFO  --> adding a comment [] 
+1602722229 - DEBUG --> getting a connection 
+1602722229 - DEBUG --> getting a connection 
+1602722234 - INFO  --> User entered invalid age [] 
+1602722234 - INFO  --> adding a comment [65688984] 
+1602722234 - DEBUG --> getting a connection 
+1602722234 - DEBUG --> getting a connection 
+1602722288 - INFO  --> adding a comment [hello] 
+1602722288 - DEBUG --> getting a connection 
+1602722288 - DEBUG --> getting a connection 
+1602722355 - DEBUG --> getting a connection 
+1602722357 - INFO  --> User entered invalid age [] 
+1602722357 - INFO  --> adding a comment [] 
+1602722357 - DEBUG --> getting a connection 
+1602722357 - DEBUG --> getting a connection 
+1602722365 - DEBUG --> getting a connection 
+1602722390 - DEBUG --> getting a connection 
+1602722392 - DEBUG --> getting a connection 
+1602722394 - DEBUG --> getting a connection 
+1602722403 - DEBUG --> getting a connection 
+1602722415 - DEBUG --> getting a connection 
+1602722423 - DEBUG --> getting a connection 
+1602722430 - DEBUG --> getting a connection 
+1602722457 - DEBUG --> getting a connection 
+1602722485 - DEBUG --> getting a connection 
+1602722491 - DEBUG --> getting a connection 
+1602722501 - DEBUG --> getting a connection 
+1602722511 - DEBUG --> getting a connection 
+1602722523 - DEBUG --> getting a connection 
+1602722527 - DEBUG --> getting a connection 
+1602722537 - INFO  --> adding a comment [] 
+1602722537 - DEBUG --> getting a connection 
+1602722537 - DEBUG --> getting a connection 
+1602722548 - DEBUG --> getting a connection 
+1602722548 - INFO  --> deleting a comment [30] 
+1602722548 - DEBUG --> getting a connection 
+1602722549 - DEBUG --> getting a connection 
+1602722549 - INFO  --> deleting a comment [34] 
+1602722549 - DEBUG --> getting a connection 
+1602722550 - DEBUG --> getting a connection 
+1602722550 - INFO  --> deleting a comment [33] 
+1602722550 - DEBUG --> getting a connection 
+1602722550 - DEBUG --> getting a connection 
+1602722550 - INFO  --> deleting a comment [32] 
+1602722550 - DEBUG --> getting a connection 
+1602722551 - DEBUG --> getting a connection 
+1602722551 - INFO  --> deleting a comment [31] 
+1602722551 - DEBUG --> getting a connection 
+1602722551 - DEBUG --> getting a connection 
+1602722551 - INFO  --> deleting a comment [29] 
+1602722551 - DEBUG --> getting a connection 
+1602722552 - DEBUG --> getting a connection 
+1602722552 - INFO  --> deleting a comment [28] 
+1602722552 - DEBUG --> getting a connection 
+1602722552 - DEBUG --> getting a connection 
+1602722552 - INFO  --> deleting a comment [27] 
+1602722552 - DEBUG --> getting a connection 
+1602722552 - DEBUG --> getting a connection 
+1602722552 - INFO  --> deleting a comment [26] 
+1602722552 - DEBUG --> getting a connection 
+1602722553 - DEBUG --> getting a connection 
+1602722553 - INFO  --> deleting a comment [25] 
+1602722553 - DEBUG --> getting a connection 
+1602722553 - DEBUG --> getting a connection 
+1602722553 - INFO  --> deleting a comment [24] 
+1602722553 - DEBUG --> getting a connection 
+1602722554 - DEBUG --> getting a connection 
+1602722554 - INFO  --> deleting a comment [23] 
+1602722554 - DEBUG --> getting a connection 
+1602722554 - DEBUG --> getting a connection 
+1602722554 - INFO  --> deleting a comment [22] 
+1602722554 - DEBUG --> getting a connection 
+1602722555 - DEBUG --> getting a connection 
+1602722555 - INFO  --> deleting a comment [21] 
+1602722555 - DEBUG --> getting a connection 
+1602722556 - INFO  --> User entered invalid age [] 
+1602722556 - INFO  --> adding a comment [] 
+1602722556 - DEBUG --> getting a connection 
+1602722556 - DEBUG --> getting a connection 
+1602722595 - DEBUG --> getting a connection 
+1602722596 - INFO  --> User entered invalid age [] 
+1602722609 - DEBUG --> getting a connection 
+1602722610 - INFO  --> User entered invalid age [] 
+1602722621 - INFO  --> User entered invalid age [] 
+1602722621 - DEBUG --> getting a connection 
+1602722622 - INFO  --> User entered invalid age [] 
+1602722622 - DEBUG --> getting a connection 
+1602722624 - INFO  --> User entered invalid age [] 
+1602722624 - DEBUG --> getting a connection 
+1602722625 - INFO  --> User entered invalid age [] 
+1602722625 - DEBUG --> getting a connection 
+1602722632 - DEBUG --> getting a connection 
+1602722633 - INFO  --> User entered invalid age [] 
+1602722639 - INFO  --> User entered invalid age [] 
+1602722639 - DEBUG --> getting a connection 
+1602722640 - INFO  --> User entered invalid age [] 
+1602722640 - DEBUG --> getting a connection 
+1602722641 - INFO  --> User entered invalid age [] 
+1602722641 - DEBUG --> getting a connection 
+1602722641 - INFO  --> User entered invalid age [] 
+1602722641 - DEBUG --> getting a connection 
+1602722642 - INFO  --> User entered invalid age [] 
+1602722642 - DEBUG --> getting a connection 
+1602722643 - DEBUG --> getting a connection 
+1602722643 - INFO  --> deleting a comment [35] 
+1602722643 - DEBUG --> getting a connection 
+1602722666 - INFO  --> adding a comment [legit] 
+1602722666 - DEBUG --> getting a connection 
+1602722666 - DEBUG --> getting a connection 
+1602722877 - DEBUG --> getting a connection 
+1602722878 - INFO  --> User entered invalid age [] 
+1602722878 - DEBUG --> getting a connection 
+1602722900 - DEBUG --> getting a connection 
+1602722913 - DEBUG --> getting a connection 
+1602722958 - INFO  --> User entered invalid age [] 
+1602722958 - DEBUG --> getting a connection 
+1602722959 - INFO  --> User entered invalid age [] 
+1602722959 - DEBUG --> getting a connection 
+1602723061 - DEBUG --> getting a connection 
+1602723064 - INFO  --> User entered invalid age [] 
+1602723064 - DEBUG --> getting a connection 
+1602723079 - DEBUG --> getting a connection 
+1602723107 - DEBUG --> getting a connection 
+1602723112 - DEBUG --> getting a connection 
+1602723138 - DEBUG --> getting a connection 
+1602723161 - INFO  --> User entered invalid age [] 
+1602723161 - DEBUG --> getting a connection 
+1602723162 - INFO  --> User entered invalid age [] 
+1602723162 - DEBUG --> getting a connection 
+1602723165 - DEBUG --> getting a connection 
+1602723200 - DEBUG --> getting a connection 
+1602723228 - DEBUG --> getting a connection 
+1602723233 - INFO  --> adding a comment [hello] 
+1602723233 - DEBUG --> getting a connection 
+1602723233 - DEBUG --> getting a connection 
+1602723255 - DEBUG --> getting a connection 
+1602723257 - INFO  --> User entered invalid age [] 
+1602723257 - DEBUG --> getting a connection 
+1602723261 - INFO  --> adding a comment [hello] 
+1602723261 - DEBUG --> getting a connection 
+1602723261 - DEBUG --> getting a connection 
+1602723273 - DEBUG --> getting a connection 
+1602723273 - INFO  --> deleting a comment [38] 
+1602723273 - DEBUG --> getting a connection 
+1602723274 - DEBUG --> getting a connection 
+1602723274 - INFO  --> deleting a comment [37] 
+1602723274 - DEBUG --> getting a connection 
+1602723444 - DEBUG --> getting a connection 
+1602723449 - DEBUG --> getting a connection 
+1602723450 - DEBUG --> getting a connection 
+1602723462 - DEBUG --> getting a connection 
+1602723464 - DEBUG --> getting a connection 
+1602723520 - DEBUG --> getting a connection 
+1602723529 - DEBUG --> getting a connection 
+1602723537 - DEBUG --> getting a connection 
+1602723547 - DEBUG --> getting a connection 
+1602723796 - DEBUG --> getting a connection 

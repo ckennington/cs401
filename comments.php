@@ -1,5 +1,8 @@
 <?php
+session_start();
 require_once 'table.php';
+
+setcookie('cs401_cookies', 'poop');
 ?>
 
 <html>
@@ -14,6 +17,17 @@ require_once 'table.php';
       <div>Comment: <input type="text" name="comment" id="comment"/></div>
       <input type="submit" value="Post a Comment">
     </form>
+    <?php
+    if (isset($_SESSION['good'])) {
+      foreach ($_SESSION['good'] as $message) {
+        echo "<div class='good'>{$message}</div>";
+      }
+      foreach ($_SESSION['bad'] as $message) {
+        echo "<div class='bad'>{$message}</div>";
+      }
+    }
+
+    ?>
       <?php
       renderTable("comments.txt");
       ?>

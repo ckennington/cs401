@@ -29,3 +29,24 @@ td {
 .delete {
   text-align:center;
 }
+
+.good {
+  border: black 1px solid;
+  padding: 10 15;
+  background-color: green;
+  color: white;
+  font-family:Helvetica;
+  margin-bottom: 5px;
+  width: 500px;
+
+}
+
+.bad {
+  border: black 1px solid;
+  padding: 10 15;
+  background-color: #B73239;
+  color: white;
+  font-family:Helvetica;
+  margin-bottom: 5px;
+  width: 500px;
+}
