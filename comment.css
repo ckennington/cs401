@@ -50,3 +50,7 @@ td {
   margin-bottom: 5px;
   width: 500px;
 }
+
+#logout {
+   float:right;
+}

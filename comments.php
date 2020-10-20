@@ -1,8 +1,12 @@
 <?php
 session_start();
-require_once 'table.php';
 
-setcookie('cs401_cookies', 'poop');
+// check for authentication
+if (isset($_SESSION['authenticated']) && !$_SESSION['authenticated'] || !isset($_SESSION['authenticated'])) {
+  header("Location: http://cs401/login.php");
+}
+
+require_once 'table.php';
 ?>
 
 <html>
@@ -10,6 +14,7 @@ setcookie('cs401_cookies', 'poop');
     <link rel="stylesheet" type="text/css" href="comment.css">
   </head>
   <body>
+    <span id="logout"><a href="logout.php">Logout</a></span>
     <h1>Leave a Comment</h1>
     <form method="POST" action="comment_handler.php">
       <div>Name: <input type="text" name="name" id="name"/></div>
