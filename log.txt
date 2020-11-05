@@ -493,3 +493,440 @@
 1603153343 - DEBUG --> getting a connection 
 1603153361 - DEBUG --> getting a connection 
 1603153362 - DEBUG --> getting a connection 
+1603153525 - DEBUG --> getting a connection 
+1603153538 - DEBUG --> getting a connection 
+1603154477 - DEBUG --> getting a connection 
+1603155039 - DEBUG --> getting a connection 
+1603155042 - INFO  --> User entered invalid age [] 
+1603155042 - DEBUG --> getting a connection 
+1603155046 - INFO  --> User entered invalid age [] 
+1603155046 - DEBUG --> getting a connection 
+1603155517 - DEBUG --> getting a connection 
+1603155527 - DEBUG --> getting a connection 
+1603155535 - INFO  --> adding a comment [thank you for posting] 
+1603155535 - DEBUG --> getting a connection 
+1603155535 - DEBUG --> getting a connection 
+1603155607 - DEBUG --> getting a connection 
+1603155611 - DEBUG --> getting a connection 
+1604366345 - DEBUG --> getting a connection 
+1604366345 - FATAL --> Ooops the database crapped its pants: PDOException Object
+(
+    [message:protected] => SQLSTATE[HY000] [2002] No such file or directory
+    [string:Exception:private] => 
+    [code:protected] => 2002
+    [file:protected] => /Users/crk/projects/cs401/src/www/Dao.php
+    [line:protected] => 20
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/Dao.php
+                    [line] => 20
+                    [function] => __construct
+                    [class] => PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => mysql:host=localhost;dbname=ckenning
+                            [1] => ckenning
+                            [2] => password
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/Dao.php
+                    [line] => 30
+                    [function] => getConnection
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/table.php
+                    [line] => 6
+                    [function] => getComments
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/comments.php
+                    [line] => 37
+                    [function] => renderTable
+                    [args] => Array
+                        (
+                            [0] => comments.txt
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => 
+    [xdebug_message] => <tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/crk/projects/cs401/src/www/Dao.php on line <i>20</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0036</td><td bgcolor='#eeeeec' align='right'>365800</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/Users/crk/projects/cs401/src/www/comments.php' bgcolor='#eeeeec'>.../comments.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0069</td><td bgcolor='#eeeeec' align='right'>394552</td><td bgcolor='#eeeeec'>renderTable(  )</td><td title='/Users/crk/projects/cs401/src/www/comments.php' bgcolor='#eeeeec'>.../comments.php<b>:</b>37</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0071</td><td bgcolor='#eeeeec' align='right'>395840</td><td bgcolor='#eeeeec'>Dao->getComments(  )</td><td title='/Users/crk/projects/cs401/src/www/table.php' bgcolor='#eeeeec'>.../table.php<b>:</b>6</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0071</td><td bgcolor='#eeeeec' align='right'>395840</td><td bgcolor='#eeeeec'>Dao->getConnection(  )</td><td title='/Users/crk/projects/cs401/src/www/Dao.php' bgcolor='#eeeeec'>.../Dao.php<b>:</b>30</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.0074</td><td bgcolor='#eeeeec' align='right'>396200</td><td bgcolor='#eeeeec'><a href='http://www.php.net/PDO.construct' target='_new'>__construct</a>
+(  )</td><td title='/Users/crk/projects/cs401/src/www/Dao.php' bgcolor='#eeeeec'>.../Dao.php<b>:</b>20</td></tr>
+
+)
+ 
+1604540242 - DEBUG --> getting a connection 
+1604540242 - FATAL --> Ooops the database crapped its pants: PDOException Object
+(
+    [message:protected] => SQLSTATE[HY000] [2002] No such file or directory
+    [string:Exception:private] => 
+    [code:protected] => 2002
+    [file:protected] => /Users/crk/projects/cs401/src/www/Dao.php
+    [line:protected] => 20
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/Dao.php
+                    [line] => 20
+                    [function] => __construct
+                    [class] => PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => mysql:host=localhost;dbname=ckenning
+                            [1] => ckenning
+                            [2] => password
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/Dao.php
+                    [line] => 30
+                    [function] => getConnection
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/table.php
+                    [line] => 6
+                    [function] => getComments
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/comments.php
+                    [line] => 37
+                    [function] => renderTable
+                    [args] => Array
+                        (
+                            [0] => comments.txt
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => 
+    [xdebug_message] => <tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/crk/projects/cs401/src/www/Dao.php on line <i>20</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0059</td><td bgcolor='#eeeeec' align='right'>365632</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/Users/crk/projects/cs401/src/www/comments.php' bgcolor='#eeeeec'>.../comments.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0133</td><td bgcolor='#eeeeec' align='right'>394384</td><td bgcolor='#eeeeec'>renderTable(  )</td><td title='/Users/crk/projects/cs401/src/www/comments.php' bgcolor='#eeeeec'>.../comments.php<b>:</b>37</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0136</td><td bgcolor='#eeeeec' align='right'>395672</td><td bgcolor='#eeeeec'>Dao->getComments(  )</td><td title='/Users/crk/projects/cs401/src/www/table.php' bgcolor='#eeeeec'>.../table.php<b>:</b>6</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0136</td><td bgcolor='#eeeeec' align='right'>395672</td><td bgcolor='#eeeeec'>Dao->getConnection(  )</td><td title='/Users/crk/projects/cs401/src/www/Dao.php' bgcolor='#eeeeec'>.../Dao.php<b>:</b>30</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.0145</td><td bgcolor='#eeeeec' align='right'>396032</td><td bgcolor='#eeeeec'><a href='http://www.php.net/PDO.construct' target='_new'>__construct</a>
+(  )</td><td title='/Users/crk/projects/cs401/src/www/Dao.php' bgcolor='#eeeeec'>.../Dao.php<b>:</b>20</td></tr>
+
+)
+ 
+1604540248 - DEBUG --> getting a connection 
+1604540248 - FATAL --> Ooops the database crapped its pants: PDOException Object
+(
+    [message:protected] => SQLSTATE[HY000] [2002] No such file or directory
+    [string:Exception:private] => 
+    [code:protected] => 2002
+    [file:protected] => /Users/crk/projects/cs401/src/www/Dao.php
+    [line:protected] => 20
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/Dao.php
+                    [line] => 20
+                    [function] => __construct
+                    [class] => PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => mysql:host=localhost;dbname=ckenning
+                            [1] => ckenning
+                            [2] => password
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/Dao.php
+                    [line] => 30
+                    [function] => getConnection
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/table.php
+                    [line] => 6
+                    [function] => getComments
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/comments.php
+                    [line] => 37
+                    [function] => renderTable
+                    [args] => Array
+                        (
+                            [0] => comments.txt
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => 
+    [xdebug_message] => <tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/crk/projects/cs401/src/www/Dao.php on line <i>20</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0002</td><td bgcolor='#eeeeec' align='right'>368360</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/Users/crk/projects/cs401/src/www/comments.php' bgcolor='#eeeeec'>.../comments.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0011</td><td bgcolor='#eeeeec' align='right'>397328</td><td bgcolor='#eeeeec'>renderTable(  )</td><td title='/Users/crk/projects/cs401/src/www/comments.php' bgcolor='#eeeeec'>.../comments.php<b>:</b>37</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0013</td><td bgcolor='#eeeeec' align='right'>398616</td><td bgcolor='#eeeeec'>Dao->getComments(  )</td><td title='/Users/crk/projects/cs401/src/www/table.php' bgcolor='#eeeeec'>.../table.php<b>:</b>6</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0013</td><td bgcolor='#eeeeec' align='right'>398616</td><td bgcolor='#eeeeec'>Dao->getConnection(  )</td><td title='/Users/crk/projects/cs401/src/www/Dao.php' bgcolor='#eeeeec'>.../Dao.php<b>:</b>30</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.0014</td><td bgcolor='#eeeeec' align='right'>398976</td><td bgcolor='#eeeeec'><a href='http://www.php.net/PDO.construct' target='_new'>__construct</a>
+(  )</td><td title='/Users/crk/projects/cs401/src/www/Dao.php' bgcolor='#eeeeec'>.../Dao.php<b>:</b>20</td></tr>
+
+)
+ 
+1604540254 - INFO  --> adding a comment [90909] 
+1604540254 - DEBUG --> getting a connection 
+1604540254 - FATAL --> Ooops the database crapped its pants: PDOException Object
+(
+    [message:protected] => SQLSTATE[HY000] [2002] No such file or directory
+    [string:Exception:private] => 
+    [code:protected] => 2002
+    [file:protected] => /Users/crk/projects/cs401/src/www/Dao.php
+    [line:protected] => 20
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/Dao.php
+                    [line] => 20
+                    [function] => __construct
+                    [class] => PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => mysql:host=localhost;dbname=ckenning
+                            [1] => ckenning
+                            [2] => password
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/Dao.php
+                    [line] => 36
+                    [function] => getConnection
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/comment_handler.php
+                    [line] => 33
+                    [function] => addComment
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => 90909
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => 
+    [xdebug_message] => <tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/crk/projects/cs401/src/www/Dao.php on line <i>20</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0059</td><td bgcolor='#eeeeec' align='right'>378280</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/Users/crk/projects/cs401/src/www/comment_handler.php' bgcolor='#eeeeec'>.../comment_handler.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0068</td><td bgcolor='#eeeeec' align='right'>406320</td><td bgcolor='#eeeeec'>Dao->addComment(  )</td><td title='/Users/crk/projects/cs401/src/www/comment_handler.php' bgcolor='#eeeeec'>.../comment_handler.php<b>:</b>33</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0069</td><td bgcolor='#eeeeec' align='right'>406320</td><td bgcolor='#eeeeec'>Dao->getConnection(  )</td><td title='/Users/crk/projects/cs401/src/www/Dao.php' bgcolor='#eeeeec'>.../Dao.php<b>:</b>36</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0069</td><td bgcolor='#eeeeec' align='right'>406680</td><td bgcolor='#eeeeec'><a href='http://www.php.net/PDO.construct' target='_new'>__construct</a>
+(  )</td><td title='/Users/crk/projects/cs401/src/www/Dao.php' bgcolor='#eeeeec'>.../Dao.php<b>:</b>20</td></tr>
+
+)
+ 
+1604540259 - DEBUG --> getting a connection 
+1604540259 - FATAL --> Ooops the database crapped its pants: PDOException Object
+(
+    [message:protected] => SQLSTATE[HY000] [2002] No such file or directory
+    [string:Exception:private] => 
+    [code:protected] => 2002
+    [file:protected] => /Users/crk/projects/cs401/src/www/Dao.php
+    [line:protected] => 20
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/Dao.php
+                    [line] => 20
+                    [function] => __construct
+                    [class] => PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => mysql:host=localhost;dbname=ckenning
+                            [1] => ckenning
+                            [2] => password
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/Dao.php
+                    [line] => 30
+                    [function] => getConnection
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/table.php
+                    [line] => 6
+                    [function] => getComments
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/crk/projects/cs401/src/www/comments.php
+                    [line] => 37
+                    [function] => renderTable
+                    [args] => Array
+                        (
+                            [0] => comments.txt
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => 
+    [xdebug_message] => <tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/crk/projects/cs401/src/www/Dao.php on line <i>20</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0002</td><td bgcolor='#eeeeec' align='right'>366904</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/Users/crk/projects/cs401/src/www/comments.php' bgcolor='#eeeeec'>.../comments.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0008</td><td bgcolor='#eeeeec' align='right'>396064</td><td bgcolor='#eeeeec'>renderTable(  )</td><td title='/Users/crk/projects/cs401/src/www/comments.php' bgcolor='#eeeeec'>.../comments.php<b>:</b>37</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0009</td><td bgcolor='#eeeeec' align='right'>397352</td><td bgcolor='#eeeeec'>Dao->getComments(  )</td><td title='/Users/crk/projects/cs401/src/www/table.php' bgcolor='#eeeeec'>.../table.php<b>:</b>6</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0009</td><td bgcolor='#eeeeec' align='right'>397352</td><td bgcolor='#eeeeec'>Dao->getConnection(  )</td><td title='/Users/crk/projects/cs401/src/www/Dao.php' bgcolor='#eeeeec'>.../Dao.php<b>:</b>30</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.0009</td><td bgcolor='#eeeeec' align='right'>397712</td><td bgcolor='#eeeeec'><a href='http://www.php.net/PDO.construct' target='_new'>__construct</a>
+(  )</td><td title='/Users/crk/projects/cs401/src/www/Dao.php' bgcolor='#eeeeec'>.../Dao.php<b>:</b>20</td></tr>
+
+)
+ 
+1604540320 - DEBUG --> getting a connection 
+1604540324 - INFO  --> User entered invalid age [] 
+1604540324 - DEBUG --> getting a connection 
+1604540383 - DEBUG --> getting a connection 
+1604540419 - DEBUG --> getting a connection 
+1604540420 - DEBUG --> getting a connection 
+1604540523 - DEBUG --> getting a connection 
+1604540547 - DEBUG --> getting a connection 
+1604540653 - DEBUG --> getting a connection 
+1604540663 - DEBUG --> getting a connection 
+1604540670 - DEBUG --> getting a connection 
+1604540731 - DEBUG --> getting a connection 
+1604540753 - DEBUG --> getting a connection 
+1604540765 - DEBUG --> getting a connection 
+1604540770 - DEBUG --> getting a connection 
+1604540770 - DEBUG --> getting a connection 
+1604540792 - DEBUG --> getting a connection 
+1604540829 - DEBUG --> getting a connection 
+1604540849 - DEBUG --> getting a connection 
+1604540857 - DEBUG --> getting a connection 
+1604540872 - DEBUG --> getting a connection 
+1604540877 - DEBUG --> getting a connection 
+1604540924 - DEBUG --> getting a connection 
+1604541019 - DEBUG --> getting a connection 
+1604541030 - DEBUG --> getting a connection 
+1604541065 - DEBUG --> getting a connection 
+1604541081 - INFO  --> User entered invalid age [] 
+1604541081 - DEBUG --> getting a connection 
+1604541103 - DEBUG --> getting a connection 
+1604541217 - DEBUG --> getting a connection 
+1604541219 - DEBUG --> getting a connection 
+1604559585 - INFO  --> User entered invalid age [] 
+1604559585 - DEBUG --> getting a connection 

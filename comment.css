@@ -5,6 +5,15 @@ input {
   border-radius:0.5em;
 }
 
+.fadeout {
+  float: right;
+}
+
+.fadeout:hover {
+  cursor:pointer;
+  text-decoration: underline;
+}
+
 table {
   border-collapse: collapse;
   margin: 15 0;

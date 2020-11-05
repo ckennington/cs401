@@ -1,0 +1,13 @@
+h1 {
+  margin: 50 30;
+  font-size: 75px;
+  text-align: center;
+  font-family: 'Ravi Prakash', cursive;
+}
+
+p {
+  margin: 50 30;
+  font-size: 35px;
+  font-family: 'Arimo', sans-serif;
+  line-height: 60px;
+}

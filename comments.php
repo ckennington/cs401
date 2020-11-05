@@ -12,6 +12,8 @@ require_once 'table.php';
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="comment.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/myScript.js"></script>
   </head>
   <body>
     <span id="logout"><a href="logout.php">Logout</a></span>
@@ -28,7 +30,7 @@ require_once 'table.php';
         echo "<div class='good'>{$message}</div>";
       }
       foreach ($_SESSION['bad'] as $message) {
-        echo "<div class='bad'>{$message}</div>";
+        echo "<div class='bad'>{$message}<span class='fadeout'>X</span></div>";
       }
     }
 
