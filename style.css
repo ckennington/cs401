@@ -2,8 +2,20 @@ body {
   background-color: #CCCCCC; 
 }
 
+/* this is a p tag */
 p {
+  text-indent: 15px;
   font-family: Helvetica;
+  width: 50%;
+  border: 5px black solid;
+  margin: 50px 20px;
+  padding: 20px 10px;
+  line-height: 20px; 
+  border-radius: 20px; 
+}
+
+p:hover {
+  color: green;
 }
 
 .noun {
