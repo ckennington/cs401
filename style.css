@@ -1,0 +1,23 @@
+body {
+  background-color: #CCCCCC; 
+}
+
+p {
+  font-family: Helvetica;
+}
+
+.noun {
+  background-color: red;
+}
+
+p > strong {
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+#chapter_title {
+  background-color: pink;
+}
+
