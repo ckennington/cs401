@@ -1,0 +1,50 @@
+body {
+  background-color: #DDD;
+}
+
+h1 {
+   text-align: center;
+   font-family: Helvetica;
+}
+#navigation > ol {
+	list-style: none;
+ 	margin: 10px;
+	width: 900px;
+	font-family: sans-serif;
+}
+
+#navigation > ol > li {
+ 	display:block;
+	width:120px;
+	float:left;
+	margin-left:2px;
+	border:1px solid #000;
+  padding: 3px 10px;
+  background-color: #CCC;
+}
+
+#content {
+  margin: 50px 50px;
+  padding: 20px 50px 50px 10px;
+  clear: both;
+  border: 1px gray solid;
+  background-color: #FFF;
+
+}
+
+table {
+  margin-left: 50px;
+  border-collapse: collapse;
+}
+
+table > thead > tr > th  {
+  background-color: #AAA;
+  border: solid 1px #111;
+  padding: 10 10;
+
+}
+
+table > tr, td {
+  border: solid 1px #111;
+  padding: 10 10;
+}
