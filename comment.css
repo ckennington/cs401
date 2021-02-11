@@ -1,0 +1,20 @@
+.input_box {
+  margin: 10px 5px;
+}
+
+table {
+  margin-left: 50px;
+  border-collapse: collapse;
+}
+
+table > thead > tr > th  {
+  background-color: #AAA;
+  border: solid 1px #111;
+  padding: 10 10;
+
+}
+
+table > tr, td {
+  border: solid 1px #111;
+  padding: 10 10;
+}
