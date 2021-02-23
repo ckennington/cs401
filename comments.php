@@ -16,32 +16,32 @@
       <input type="submit" value="Submit">
     </form>
 <?php
-    $contents = file_get_contents("posted_comments.txt");
-    $comments = explode("\n", trim($contents));
-    $comments = array_reverse($comments);
+    require_once 'Dao.php';
+    $dao = new Dao();
+    $comments = $dao->getComments();
+    /*
     $i = 0;
     if (count($comments) == 1) {
       echo "no comments";
-    } else {
+    } else {*/
 ?>
     <table id="comments">
       <thead>
         <tr>
           <th>Name</th>
           <th>Comment</th>
+          <th>Date</th>
           <th>Delete</th>
         </tr>
       </thead>
       <tbody>
       <?php
           foreach ($comments as $comment) {
-             list($name, $comment) = explode("|", trim($comment));
-             echo "<tr><td>{$name}</td><td>{$comment}</td><td><a href='delete_comment.php?id={$i}'>X</a></td></tr>";
-             $i++;
+            echo "<tr><td>{$comment['name']}</td><td>{$comment['comment']}</td><td>{$comment['date_entered']}<td><a href='delete_comment.php?id={$comment['comment_id']}'>X</a></td></tr>";
           }
       ?>
       </tbody>
     </table>
-    <?php } ?>
+    <?php //} ?>
   </body>
 </html>
