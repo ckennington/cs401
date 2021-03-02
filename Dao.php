@@ -1,21 +1,31 @@
 <?php
 
+require_once 'KLogger.php';
+
 class Dao {
 
   public $dsn = 'mysql:dbname=ckenning;host=127.0.0.1';
   public $user = "ckenning";
   public $password = "password";
+  protected $logger;
+
+  public function __construct () {
+    $this->logger = new KLogger ( "log.txt" , KLogger::WARN );
+  }
 
   private function getConnection () {
     try {
         $connection = new PDO($this->dsn, $this->user, $this->password);
+        $this->logger->LogDebug("Got a connection");
     } catch (PDOException $e) {
-        echo 'Connection failed: ' . $e->getMessage();
+        $error = 'Connection failed: ' . $e->getMessage();
+        $this->logger->LogError($error);
     }
     return $connection;
   }
 
   public function deleteComment ($id) {
+    $this->logger->LogInfo("deleting comment id [{$id}]");
     $conn = $this->getConnection();
     $deleteQuery = "delete from comment where comment_id = :id";
     $q = $conn->prepare($deleteQuery);
@@ -24,6 +34,7 @@ class Dao {
   }
 
   public function insertComment ($name, $comment) {
+    $this->logger->LogInfo("inserting a comment name=[{$name}], comment=[{$comment}]");
     $conn = $this->getConnection();
     $saveQuery = "insert into comment (name, comment) values (:name, :comment)";
     $q = $conn->prepare($saveQuery);

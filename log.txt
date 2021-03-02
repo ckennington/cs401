@@ -1,0 +1,38 @@
+now - ERROR --> Connection failed: SQLSTATE[HY000] [1045] Access denied for user 'ckenning'@'localhost' (using password: YES) 
+now - ERROR --> Connection failed: SQLSTATE[HY000] [1045] Access denied for user 'ckenning'@'localhost' (using password: YES) 
+now - ERROR --> Connection failed: SQLSTATE[HY000] [1045] Access denied for user 'ckenning'@'localhost' (using password: YES) 
+now - ERROR --> Connection failed: SQLSTATE[HY000] [1045] Access denied for user 'ckenning'@'localhost' (using password: YES) 
+now - ERROR --> Connection failed: SQLSTATE[HY000] [1045] Access denied for user 'ckenning'@'localhost' (using password: YES) 
+now - ERROR --> Connection failed: SQLSTATE[HY000] [1045] Access denied for user 'ckenning'@'localhost' (using password: YES) 
+now - ERROR --> Connection failed: SQLSTATE[HY000] [1045] Access denied for user 'ckenning'@'localhost' (using password: YES) 
+now - ERROR --> Connection failed: SQLSTATE[HY000] [1045] Access denied for user 'ckenning'@'localhost' (using password: YES) 
+now - ERROR --> Connection failed: SQLSTATE[HY000] [1045] Access denied for user 'ckenning'@'localhost' (using password: YES) 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - DEBUG --> deleting comment id [18] 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - DEBUG --> inserting a comment name=[conrad], comment=[efg23423bg] 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - DEBUG --> deleting comment id [20] 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - INFO  --> inserting a comment name=[conrad], comment=[FIRST!] 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - INFO  --> inserting a comment name=[conrad], comment=[poop] 
+now - WARN  --> Array
+(
+    [0] => Sorry, you're not old enough to post
+)
+ 
+now - WARN  --> Array
+(
+    [0] => Sorry, you're not old enough to post
+)
+ 
