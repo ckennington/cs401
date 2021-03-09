@@ -36,3 +36,48 @@ now - WARN  --> Array
     [0] => Sorry, you're not old enough to post
 )
  
+now - WARN  --> Array
+(
+    [0] => Sorry, you're not old enough to post
+)
+ 
+now - WARN  --> Array
+(
+    [0] => Sorry, you're not old enough to post
+)
+ 
+now - WARN  --> Array
+(
+    [0] => Sorry, invalid age - enter a number
+    [1] => Sorry, you're not old enough to post
+)
+ 
+now - WARN  --> Array
+(
+    [0] => Sorry, invalid age - enter a number
+    [1] => Sorry, you're not old enough to post
+    [2] => Sorry, your name is too long
+)
+ 
+now - WARN  --> Array
+(
+    [0] => Sorry, invalid age - enter a number
+    [1] => Sorry, you're not old enough to post
+)
+ 
+now - WARN  --> Array
+(
+    [0] => Sorry, you're not old enough to post
+)
+ 
+now - WARN  --> Array
+(
+    [0] => Sorry, you're not old enough to post
+)
+ 
+now - WARN  --> Array
+(
+    [0] => Sorry, invalid age - enter a number
+    [1] => Sorry, you're not old enough to post
+)
+ 

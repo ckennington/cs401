@@ -1,3 +1,12 @@
+<?php
+  session_start();
+  //echo "<pre>" . print_r($_SESSION,1) . "</pre>";
+//
+
+  setcookie("hello", "there");
+?>
+
+
 <html>
   <head>
     <link rel="stylesheet" href="comment.css">
@@ -19,6 +28,15 @@
       </div>
       <input type="submit" value="Submit">
     </form>
+<?php
+    if (isset($_SESSION['messages'])) {
+      foreach ($_SESSION['messages'] as $message) {
+        echo "<div class='" . $_SESSION['class'] . " message'>{$message}</div>";
+      }
+    }
+    unset($_SESSION['messages']);
+?>
+
 <?php
     require_once 'Dao.php';
     $dao = new Dao();

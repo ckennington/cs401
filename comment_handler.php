@@ -1,4 +1,5 @@
 <?php
+  session_start();
 
   require_once 'KLogger.php';
   $logger = new KLogger ( "log.txt" , KLogger::WARN );
@@ -19,8 +20,13 @@
 
   if (count($errors) > 0) {
     $logger->LogWarn(print_r($errors,1));
+    $_SESSION['messages'] = $errors;
+    $_SESSION['class'] = "mad_mojo";
     header('Location: comments.php');
     exit;
+  } else {
+    $_SESSION['class'] = "positive_vibes";
+    $_SESSION['messages'] = array("Thanks for posting!");
   }
 
   require_once 'Dao.php';
