@@ -21,7 +21,7 @@
   if (count($errors) > 0) {
     $logger->LogWarn(print_r($errors,1));
     $_SESSION['messages'] = $errors;
-    $_SESSION['class'] = "mad_mojo";
+    $_SESSION['class'] = "bad_mojo";
     header('Location: comments.php');
     exit;
   } else {
