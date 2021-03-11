@@ -35,3 +35,6 @@ table > tr, td {
   background-color: #B90000;
 }
 
+#logout {
+  float: right;
+}

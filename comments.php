@@ -1,17 +1,16 @@
 <?php
   session_start();
-  //echo "<pre>" . print_r($_SESSION,1) . "</pre>";
-//
-
-  setcookie("hello", "there");
+  if (!isset($_SESSION['authenticated']) || !$_SESSION['authenticated']) {
+     header('Location: login.php');
+     exit;
+  }
 ?>
-
-
 <html>
   <head>
     <link rel="stylesheet" href="comment.css">
   </head>
   <body>
+    <span id="logout"><a href="logout.php">Logout</a></span>
     <h1>Leave a Comment</h1>
     <form method="post" action="comment_handler.php">
       <div class="input_box">
