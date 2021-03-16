@@ -54,20 +54,21 @@ class Dao {
     $q->execute();
   }
 
-  public function insertComment ($name, $comment) {
+  public function insertComment ($name, $comment, $imagePath) {
     $this->logger->LogInfo("inserting a comment name=[{$name}], comment=[{$comment}]");
     $conn = $this->getConnection();
-    $saveQuery = "insert into comment (name, comment) values (:name, :comment)";
+    $saveQuery = "insert into comment (name, comment, image_path) values (:name, :comment, :image_path)";
     $q = $conn->prepare($saveQuery);
     $q->bindParam(":name", $name);
     $q->bindParam(":comment", $comment);
+    $q->bindParam(":image_path", $imagePath);
     $q->execute();
   }
 
   public function getComments () {
     $connection = $this->getConnection();
     try {
-        $rows = $connection->query("select name, comment_id, comment, date_entered from comment order by date_entered desc", PDO::FETCH_ASSOC);
+        $rows = $connection->query("select name, comment_id, comment, image_path, date_entered from comment order by date_entered desc", PDO::FETCH_ASSOC);
     } catch(Exception $e) {
       echo print_r($e,1);
       exit;

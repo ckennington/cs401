@@ -156,3 +156,328 @@ now - INFO  --> user found!Array
  
 now - DEBUG --> Got a connection 
 now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - INFO  --> user found!Array
+(
+    [total] => 1
+    [0] => 1
+)
+ 
+now - DEBUG --> Got a connection 
+now - INFO  --> inserting a comment name=[conrad], comment=[hello] 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - INFO  --> user found!Array
+(
+    [total] => 1
+    [0] => 1
+)
+ 
+now - DEBUG --> Got a connection 
+now - WARN  --> Array
+(
+    [0] => Sorry, invalid age - enter a number
+    [1] => Sorry, you're not old enough to post
+)
+ 
+now - DEBUG --> Got a connection 
+now - WARN  --> Array
+(
+    [0] => Sorry, invalid age - enter a number
+    [1] => Sorry, you're not old enough to post
+)
+ 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - INFO  --> user found!Array
+(
+    [total] => 1
+    [0] => 1
+)
+ 
+now - DEBUG --> Got a connection 
+now - WARN  --> Array
+(
+    [0] => Sorry, invalid age - enter a number
+    [1] => Sorry, you're not old enough to post
+)
+ 
+now - DEBUG --> Got a connection 
+now - WARN  --> Array
+(
+    [0] => Sorry, invalid age - enter a number
+    [1] => Sorry, you're not old enough to post
+)
+ 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - WARN  --> Array
+(
+    [0] => Sorry, invalid age - enter a number
+    [1] => Sorry, you're not old enough to post
+)
+ 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - WARN  --> Array
+(
+    [0] => Sorry, invalid age - enter a number
+    [1] => Sorry, you're not old enough to post
+)
+ 
+now - DEBUG --> Got a connection 
+now - WARN  --> Array
+(
+    [0] => Sorry, invalid age - enter a number
+    [1] => Sorry, you're not old enough to post
+)
+ 
+now - DEBUG --> Got a connection 
+now - WARN  --> Array
+(
+    [0] => Sorry, invalid age - enter a number
+    [1] => Sorry, you're not old enough to post
+)
+ 
+now - DEBUG --> Got a connection 
+now - WARN  --> Array
+(
+    [0] => Sorry, invalid age - enter a number
+    [1] => Sorry, you're not old enough to post
+)
+ 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - WARN  --> Array
+(
+    [0] => Sorry, invalid age - enter a number
+    [1] => Sorry, you're not old enough to post
+)
+ 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - WARN  --> Array
+(
+    [0] => Sorry, invalid age - enter a number
+    [1] => Sorry, you're not old enough to post
+)
+ 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - WARN  --> Array
+(
+    [0] => Sorry, invalid age - enter a number
+    [1] => Sorry, you're not old enough to post
+)
+ 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - WARN  --> Array
+(
+    [0] => Sorry, invalid age - enter a number
+    [1] => Sorry, you're not old enough to post
+)
+ 
+now - DEBUG --> Got a connection 
+now - WARN  --> Array
+(
+    [0] => Sorry, invalid age - enter a number
+    [1] => Sorry, you're not old enough to post
+)
+ 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - WARN  --> Array
+(
+    [0] => Sorry, invalid age - enter a number
+    [1] => Sorry, you're not old enough to post
+)
+ 
+now - DEBUG --> Got a connection 
+now - WARN  --> Array
+(
+    [0] => Sorry, you're not old enough to post
+)
+ 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - INFO  --> user found!Array
+(
+    [total] => 1
+    [0] => 1
+)
+ 
+now - DEBUG --> Got a connection 
+now - WARN  --> Array
+(
+    [0] => Sorry, invalid age - enter a number
+    [1] => Sorry, you're not old enough to post
+)
+ 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - INFO  --> user found!Array
+(
+    [total] => 1
+    [0] => 1
+)
+ 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - INFO  --> user found!Array
+(
+    [total] => 1
+    [0] => 1
+)
+ 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - WARN  --> Array
+(
+    [0] => Sorry, invalid age - enter a number
+    [1] => Sorry, you're not old enough to post
+)
+ 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - INFO  --> user found!Array
+(
+    [total] => 1
+    [0] => 1
+)
+ 
+now - DEBUG --> Got a connection 
+now - WARN  --> Array
+(
+    [0] => Sorry, invalid age - enter a number
+    [1] => Sorry, you're not old enough to post
+)
+ 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - WARN  --> Array
+(
+    [0] => Sorry, invalid age - enter a number
+    [1] => Sorry, you're not old enough to post
+)
+ 
+now - DEBUG --> Got a connection 
+now - WARN  --> Array
+(
+    [0] => Sorry, invalid age - enter a number
+    [1] => Sorry, you're not old enough to post
+)
+ 
+now - DEBUG --> Got a connection 
+now - WARN  --> Array
+(
+    [0] => Sorry, you're not old enough to post
+)
+ 
+now - DEBUG --> Got a connection 
+now - WARN  --> Array
+(
+    [0] => Sorry, you're not old enough to post
+)
+ 
+now - DEBUG --> Got a connection 
+now - INFO  --> inserting a comment name=[conrad], comment=[hello] 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - INFO  --> user found!Array
+(
+    [total] => 1
+    [0] => 1
+)
+ 
+now - DEBUG --> Got a connection 
+now - WARN  --> Array
+(
+    [0] => Sorry, invalid age - enter a number
+    [1] => Sorry, you're not old enough to post
+)
+ 
+now - DEBUG --> Got a connection 
+now - WARN  --> Array
+(
+    [0] => Sorry, invalid age - enter a number
+    [1] => Sorry, you're not old enough to post
+)
+ 
+now - DEBUG --> Got a connection 
+now - INFO  --> inserting a comment name=[conrad], comment=[] 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - WARN  --> Array
+(
+    [0] => Sorry, invalid age - enter a number
+    [1] => Sorry, you're not old enough to post
+)
+ 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - INFO  --> inserting a comment name=[conrad], comment=[hello] 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - INFO  --> inserting a comment name=[conrad], comment=[hello] 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - INFO  --> inserting a comment name=[conrad], comment=[poop] 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - INFO  --> inserting a comment name=[conrad], comment=[hello] 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - INFO  --> deleting comment id [44] 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - INFO  --> deleting comment id [46] 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - INFO  --> deleting comment id [43] 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - INFO  --> deleting comment id [45] 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - INFO  --> deleting comment id [42] 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - INFO  --> deleting comment id [41] 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - INFO  --> deleting comment id [40] 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - INFO  --> deleting comment id [39] 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - INFO  --> deleting comment id [38] 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - INFO  --> deleting comment id [29] 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - INFO  --> deleting comment id [15] 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
+now - INFO  --> deleting comment id [13] 
+now - DEBUG --> Got a connection 
+now - DEBUG --> Got a connection 
