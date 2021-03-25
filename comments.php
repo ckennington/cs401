@@ -8,6 +8,8 @@
 ?>
 <html>
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/comment.js"></script>
     <link rel="stylesheet" href="comment.css">
   </head>
   <body>
@@ -35,7 +37,7 @@
 <?php
     if (isset($_SESSION['messages'])) {
       foreach ($_SESSION['messages'] as $message) {
-        echo "<div class='" . $_SESSION['class'] . " message'>{$message}</div>";
+        echo "<div class='" . $_SESSION['class'] . " message'>{$message}<span class='close'>x</span></div>";
       }
     }
     unset($_SESSION['messages']);

@@ -1,6 +1,6 @@
-window.addEventListener('load', function(event) {
-  var box = document.getElementById("box");
-  box.addEventListener('click', function (event) {
-     box.style.backgroundColor = "lightblue";
+$(function() {
+  $("#box").click(function() {
+    $("#box").css("background-color", "lightblue");
   });
 });
+

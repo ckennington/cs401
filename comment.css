@@ -38,3 +38,16 @@ table > tr, td {
 #logout {
   float: right;
 }
+
+.close {
+  float:right;
+  position: relative;
+  top: -8px;
+  right: -2px;
+}
+
+.close:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
