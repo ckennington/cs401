@@ -64,7 +64,7 @@
             echo
               "<tr><td><img src='{$comment['image_path']}'/></td>" .
               "<td>" . htmlspecialchars($comment['name']) . "</td>" .
-              "<td>" . htmlspecialchars($comment['comment']) . "</td>" .
+              "<td>" . $comment['comment'] . "</td>" .
               "<td>{$comment['date_entered']}<td><a href='delete_comment.php?id={$comment['comment_id']}'>X</a></td></tr>";
           }
       ?>

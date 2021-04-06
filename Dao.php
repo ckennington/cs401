@@ -18,6 +18,8 @@ class Dao {
         $connection = new PDO($this->dsn, $this->user, $this->password);
         $this->logger->LogDebug("Got a connection");
     } catch (PDOException $e) {
+        echo "<pre>" . print_r($e, 1) . "</pre>";
+        exit;
         $error = 'Connection failed: ' . $e->getMessage();
         $this->logger->LogError($error);
     }
