@@ -1,19 +1,21 @@
 div {
-  border: 1px black solid;
+  margin-left: 20px;
+  width: 200px;
+  height: 200px;
   text-align: center;
-  width: 28%;
-  margin: 10 10;
-  float: left;
+  line-height: 200px;
+  margin-top: 20px;
 }
 
 #box1 {
   background-color: red;
+  position: fixed;
 }
 
 #box2 {
-  background-color: green;
+  background-color: blue;
 }
 
 #box3 {
-  background-color: blue;
+  background-color: green;
 }

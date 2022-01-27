@@ -1,35 +1,42 @@
 body {
-  background-color: #CCCCCC; 
-}
-
-/* this is a p tag */
-p {
-  text-indent: 15px;
-  font-family: Helvetica;
-  width: 50%;
-  border: 5px black solid;
-  margin: 50px 20px;
-  padding: 20px 10px;
-  line-height: 20px; 
-  border-radius: 20px; 
-}
-
-p:hover {
-  color: green;
-}
-
-.noun {
-  background-color: red;
-}
-
-p > strong {
+  background-color: #F3F3F3;
 }
 
 .highlight {
   background-color: yellow;
 }
 
-#chapter_title {
-  background-color: pink;
+.highlight:hover {
+  background-color: blue;
 }
 
+.adjective {
+  background-color: red;
+}
+
+#jump {
+  color: green;
+}
+
+h1 {
+  color: blue; 
+  font-size: 50px;
+}
+
+#first {
+  color: #cb4154; 
+}
+
+#second {
+  color: blue; 
+}
+
+
+p {
+  background-color: #FFFFFF;
+  border: 1px #121212 solid;
+  padding: 20px 20px;
+  margin: 20px 20px;
+  font-size: 25px;
+  line-height: 35px;
+}
