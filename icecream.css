@@ -55,3 +55,18 @@ table td {
   border: solid black 1px;
   padding: 4px 8px;
 }
+
+.delete > a {
+  text-align: center;
+  color: red;
+}
+
+.delete {
+  width: 15px;
+
+}
+
+.delete:hover > a {
+  text-decoration: underline;
+  cursor:pointer;
+}
