@@ -13,10 +13,6 @@
     $_SESSION['message'][] = "uh, you're too young.";
   }
 
-  if (count($_SESSION['message']) > 0) {
-    header('Location: comment.php');
-    exit;
-  }
 
   // grab data from the $_POST 
   $comment = $_POST['comment'];

@@ -1,0 +1,395 @@
+now - FATAL --> The database exploded PDOException Object
+(
+    [message:protected] => SQLSTATE[HY000] [1045] Access denied for user 'ckenning'@'localhost' (using password: YES)
+    [string:Exception:private] => 
+    [code:protected] => 1045
+    [file:protected] => /Library/WebServer/Documents/Dao.php
+    [line:protected] => 21
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /Library/WebServer/Documents/Dao.php
+                    [line] => 21
+                    [function] => __construct
+                    [class] => PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => mysql:host=localhost;dbname=ckenning
+                            [1] => ckenning
+                            [2] => passwor
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /Library/WebServer/Documents/Dao.php
+                    [line] => 48
+                    [function] => getConnection
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /Library/WebServer/Documents/comment.php
+                    [line] => 38
+                    [function] => getComments
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => HY000
+            [1] => 1045
+            [2] => Access denied for user 'ckenning'@'localhost' (using password: YES)
+        )
+
+)
+ 
+now - FATAL --> The database exploded PDOException Object
+(
+    [message:protected] => SQLSTATE[HY000] [1045] Access denied for user 'ckenning'@'localhost' (using password: YES)
+    [string:Exception:private] => 
+    [code:protected] => 1045
+    [file:protected] => /Library/WebServer/Documents/Dao.php
+    [line:protected] => 21
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /Library/WebServer/Documents/Dao.php
+                    [line] => 21
+                    [function] => __construct
+                    [class] => PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => mysql:host=localhost;dbname=ckenning
+                            [1] => ckenning
+                            [2] => passwor
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /Library/WebServer/Documents/Dao.php
+                    [line] => 48
+                    [function] => getConnection
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /Library/WebServer/Documents/comment.php
+                    [line] => 38
+                    [function] => getComments
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => HY000
+            [1] => 1045
+            [2] => Access denied for user 'ckenning'@'localhost' (using password: YES)
+        )
+
+)
+ 
+now - FATAL --> The database exploded PDOException Object
+(
+    [message:protected] => SQLSTATE[HY000] [1045] Access denied for user 'ckenning'@'localhost' (using password: YES)
+    [string:Exception:private] => 
+    [code:protected] => 1045
+    [file:protected] => /Library/WebServer/Documents/Dao.php
+    [line:protected] => 21
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /Library/WebServer/Documents/Dao.php
+                    [line] => 21
+                    [function] => __construct
+                    [class] => PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => mysql:host=localhost;dbname=ckenning
+                            [1] => ckenning
+                            [2] => passwor
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /Library/WebServer/Documents/Dao.php
+                    [line] => 48
+                    [function] => getConnection
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /Library/WebServer/Documents/comment.php
+                    [line] => 38
+                    [function] => getComments
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => HY000
+            [1] => 1045
+            [2] => Access denied for user 'ckenning'@'localhost' (using password: YES)
+        )
+
+)
+ 
+now - FATAL --> The database exploded PDOException Object
+(
+    [message:protected] => SQLSTATE[HY000] [1045] Access denied for user 'ckenning'@'localhost' (using password: YES)
+    [string:Exception:private] => 
+    [code:protected] => 1045
+    [file:protected] => /Library/WebServer/Documents/Dao.php
+    [line:protected] => 21
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /Library/WebServer/Documents/Dao.php
+                    [line] => 21
+                    [function] => __construct
+                    [class] => PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => mysql:host=localhost;dbname=ckenning
+                            [1] => ckenning
+                            [2] => passwor
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /Library/WebServer/Documents/Dao.php
+                    [line] => 48
+                    [function] => getConnection
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /Library/WebServer/Documents/comment.php
+                    [line] => 38
+                    [function] => getComments
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => HY000
+            [1] => 1045
+            [2] => Access denied for user 'ckenning'@'localhost' (using password: YES)
+        )
+
+)
+ 
+now - FATAL --> The database exploded PDOException Object
+(
+    [message:protected] => SQLSTATE[HY000] [1045] Access denied for user 'ckenning'@'localhost' (using password: YES)
+    [string:Exception:private] => 
+    [code:protected] => 1045
+    [file:protected] => /Library/WebServer/Documents/Dao.php
+    [line:protected] => 21
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /Library/WebServer/Documents/Dao.php
+                    [line] => 21
+                    [function] => __construct
+                    [class] => PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => mysql:host=localhost;dbname=ckenning
+                            [1] => ckenning
+                            [2] => passwor
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /Library/WebServer/Documents/Dao.php
+                    [line] => 48
+                    [function] => getConnection
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /Library/WebServer/Documents/comment.php
+                    [line] => 38
+                    [function] => getComments
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => HY000
+            [1] => 1045
+            [2] => Access denied for user 'ckenning'@'localhost' (using password: YES)
+        )
+
+)
+ 
+now - FATAL --> The database exploded PDOException Object
+(
+    [message:protected] => SQLSTATE[HY000] [1045] Access denied for user 'ckenning'@'localhost' (using password: YES)
+    [string:Exception:private] => 
+    [code:protected] => 1045
+    [file:protected] => /Library/WebServer/Documents/Dao.php
+    [line:protected] => 21
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /Library/WebServer/Documents/Dao.php
+                    [line] => 21
+                    [function] => __construct
+                    [class] => PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => mysql:host=localhost;dbname=ckenning
+                            [1] => ckenning
+                            [2] => passwor
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /Library/WebServer/Documents/Dao.php
+                    [line] => 48
+                    [function] => getConnection
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /Library/WebServer/Documents/comment.php
+                    [line] => 38
+                    [function] => getComments
+                    [class] => Dao
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => HY000
+            [1] => 1045
+            [2] => Access denied for user 'ckenning'@'localhost' (using password: YES)
+        )
+
+)
+ 
+now - DEBUG --> comment deleted, id=[17] 
+now - DEBUG --> getting a connection... 
+now - DEBUG --> getting a connection... 
+now - DEBUG --> getting a connection... 
+now - DEBUG --> getting a connection... 
+now - DEBUG --> getting a connection... 
+now - DEBUG --> getting a connection... 
+now - DEBUG --> getting a connection... 
+now - DEBUG --> getting a connection... 
+now - DEBUG --> getting a connection... 
+now - DEBUG --> getting a connection... 
+now - DEBUG --> getting a connection... 
+now - INFO  --> comment deleted, id=[16] 
+now - DEBUG --> getting a connection... 
+now - DEBUG --> getting a connection... 
+now - DEBUG --> getting a connection... 
+now - DEBUG --> getting a connection... 
