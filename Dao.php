@@ -35,15 +35,16 @@ class Dao {
     $q->execute();
   }
 
-  public function saveComment ($comment) {
+  public function saveComment ($comment, $image_location) {
     $conn = $this->getConnection();
     $saveQuery =
         "INSERT INTO comment
-        (comment)
+        (comment, image)
         VALUES
-        (:comment)";
+        (:comment, :image)";
     $q = $conn->prepare($saveQuery);
     $q->bindParam(":comment", $comment);
+    $q->bindParam(":image", $image_location);
     $q->execute();
   }
 
