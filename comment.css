@@ -89,3 +89,15 @@ div {
 .good {
   background-color: #577D46;
 }
+
+.close {
+  float:right;
+  position: relative;
+  top: -8px;
+  right: -2px;
+}
+
+.close:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

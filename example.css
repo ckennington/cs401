@@ -1,0 +1,10 @@
+div {
+  height: 150px;
+  width: 150px;
+  border: 1px solid black;
+  background-color: red;
+}
+
+.mouseover {
+  background-color: blue;
+}

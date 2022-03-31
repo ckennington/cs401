@@ -20,6 +20,8 @@
 <html>
    <head>
      <link rel="stylesheet" href="comment.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="js/comment.js"></script>
    </head>
 <html>
   <head>
@@ -44,7 +46,7 @@
     </form>
     <?php
     foreach ($messages as $message) {
-      echo "<div class='message " . $_SESSION['sentiment']. "'>{$message}</div>";
+      echo "<div class='message " . $_SESSION['sentiment']. "'>{$message}<span class='close'>x</span></div>";
     }
 
     $comments = $dao->getComments();
