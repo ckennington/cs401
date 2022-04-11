@@ -30,16 +30,18 @@
   </head>
   <body>
     <h1>Comments</h1>
-    <form name="commentForm" action="handler.php" method="POST" enctype="multipart/form-data">
+    <form id="commentForm" name="commentForm" method="POST">
       <div>
         enter your age: <input type="text" name="age" value="<?php echo getUserInput('age'); ?>">
       </div>
       <div>
-        Leave a comment: <input type="text" name="comment" value="<?php echo getUserInput('comment'); ?>">
+        Leave a comment: <input type="text" id="comment" name="comment" value="<?php echo getUserInput('comment'); ?>">
       </div>
+<!--
       <div>
         Upload an image: <input type="file" id="myfile" name="myfile" />
       </div>
+-->
       <div>
         <input type="submit" value="Submit">
       </div>
@@ -50,7 +52,7 @@
     }
 
     $comments = $dao->getComments();
-    echo "<table>";
+    echo "<table id='comments'>";
     foreach ($comments as $comment) {
       echo "<tr>";
       echo "<td>" . htmlspecialchars($comment["comment"]) . "</td>";
