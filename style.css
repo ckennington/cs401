@@ -1,45 +1,52 @@
 body {
-  background-color: #F3F3F3;
+  /*background-color: rgb(200, 200, 200);*/
+  background-color: #C8C8C8;
+  margin: 50px;
 }
+
+#content {
+  border: 1px solid gray;
+  background-color: #FEFEFE;
+  padding: 50px 10px;
+}
+
+h1 {
+  color: red;
+  font-family: helvetica, sans-serif;
+  margin: auto;
+  width: 50%;
+  font-size: 50px;
+}
+
+ul.li {
+  list-style-type: square;
+}
+
+h2 {
+  color: blue;
+}
+
+h2:hover {
+  color: purple;
+}
+
+p {
+  font-size: 25px;
+}
+
+
+
 
 .highlight {
   background-color: yellow;
 }
 
-.highlight:hover {
+.adjectives {
+  font-size: 35px;
+}
+
+
+span {
   background-color: blue;
 }
 
-.adjective {
-  background-color: red;
-}
-
-#jump {
-  color: green;
-}
-
-h1 {
-  color: blue; 
-  font-size: 50px;
-  font-family: 'Righteous', cursive;
-}
-
-#first {
-  color: #cb4154; 
-}
-
-#second {
-  color: blue; 
-}
-
-
-p {
-  background-color: #FFFFFF;
-  border: 1px #121212 solid;
-  padding: 20px 20px;
-  margin: 20px 20px;
-  font-size: 25px;
-  line-height: 35px;
-  font-family: 'League Spartan', sans-serif;
-
-}
