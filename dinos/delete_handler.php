@@ -1,8 +1,9 @@
 <?php
   require_once 'Dao.php';
 
-  $comment = $_POST['comment'];
+  $id = $_GET['id'];
+
   $dao = new Dao();
-  $dao->saveComment($comment);
+  $dao->deleteComment($id);
   header("Location: comments.php");
   exit();

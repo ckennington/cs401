@@ -1,6 +1,7 @@
 <?php 
 include("nav.php"); 
 require_once "Widgets.php";
+require_once 'Dao.php';
 ?>
 <div id="content">
    Leave a Comment
@@ -9,6 +10,12 @@ require_once "Widgets.php";
      <input type="submit" value="Submit">
    </form>
 
-   <?php echo Widgets::renderTable(array("Comment"), "comments.log", true); ?>
+   
+   <?php
+    $dao = new Dao();
+    $comments = $dao->getComments();
+    echo Widgets::renderTable($comments);
+
+    ?>
 </div>
 <?php include("footer.php"); ?>
