@@ -1,9 +1,17 @@
 <?php 
+session_start();
 include("nav.php"); 
 require_once "Widgets.php";
 require_once 'Dao.php';
 ?>
 <div id="content">
+   <?php
+   if(isset($_SESSION['message'])) {
+      echo "<div>" . $_SESSION['message'] . "</div>";
+      unset($_SESSION['message']);
+   }
+
+   ?>
    Leave a Comment
    <form id="comment_form" method="POST" action="comment_handler.php">
      <input type="text" id="comment" name="comment">
