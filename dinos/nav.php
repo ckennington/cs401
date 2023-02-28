@@ -1,3 +1,11 @@
+<?php
+   session_start();
+   if (!isset($_SESSION['auth'])) {
+      header("Location: login.php");
+      exit();
+   } 
+
+?>
 <html>
   <head>
     <link rel="stylesheet" href="scales.css">
@@ -12,5 +20,6 @@
            <li><a href="/dinos/favorites.php">Favorites</a></li>
            <li><a href="/dinos/about.php">About</a></li>
            <li><a href="/dinos/careers.php">Careers</a></li>
+           <li><a href="/dinos/logout.php">Logout</a></li>
          </ul>
       </div>

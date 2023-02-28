@@ -1,5 +1,4 @@
 <?php 
-session_start();
 include("nav.php"); 
 require_once "Widgets.php";
 require_once 'Dao.php';
