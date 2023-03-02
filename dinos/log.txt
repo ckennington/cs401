@@ -1,0 +1,7 @@
+1677721279 - DEBUG --> User [conradkennington@gmail.com] attempting to log in 
+1677721309 - DEBUG --> User [conradkennington@gmail.com] attempting to log in 
+1677721352 - DEBUG --> User [conradkennington@gmail.com] attempting to log in 
+1677721352 - WARN  --> User [conradkennington@gmail.com] invalid username or password 
+1677721370 - DEBUG --> User [conradkennington@gmail.com] attempting to log in 
+1677721370 - WARN  --> User [conradkennington@gmail.com] invalid username or password 
+1677722075 - WARN  --> User [conradkennington@gmail.com] invalid username or password 
