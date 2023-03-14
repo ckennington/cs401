@@ -69,3 +69,12 @@ table tbody tr.active-row {
     font-weight: bold;
     color: #009879;
 }
+
+#message {
+  background-color: red;
+  width: 200px;
+  padding: 10 10;
+  margin-bottom: 10px;
+  color: white;
+  font-family: Helvetica;
+}
