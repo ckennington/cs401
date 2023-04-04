@@ -4,7 +4,7 @@ class Widgets {
 
    public static function renderTable ($rows) {
       $columnNames = array_keys($rows[0]); 
-      $html = "<table><thead><tr>";
+      $html = "<table id='comments'><thead><tr>";
       foreach ($columnNames as $name) {
         $html .= "<th>{$name}</th>";
       }

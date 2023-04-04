@@ -13,7 +13,7 @@ require_once 'Dao.php';
 
    ?>
    Leave a Comment
-   <form id="comment_form" method="POST" action="comment_handler.php" enctype="multipart/form-data">
+   <form id="comment_form" method="POST">
      <br/>
      <!--<div>Upload an image: <input type="file" id="myfile" name="myfile" /></div>
      <br/>-->
