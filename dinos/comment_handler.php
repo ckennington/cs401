@@ -2,23 +2,27 @@
   session_start();
   require_once 'Dao.php';
 
+  sleep(2);
+
   $comment = $_POST['comment'];
   $_SESSION['inputs'] = $_POST;
+  $_SESSION['message_type'] = "happy";
 
   if (strlen($comment) > 200) {
     $_SESSION['message'] = "Comment too long!";
+    $_SESSION['message_type'] = "sad";
     header("Location: comments.php");
     exit();
   }
 
   if (empty($comment)) {
     $_SESSION['message'] = "Please enter a comment";
+    $_SESSION['message_type'] = "sad";
     header("Location: comments.php");
     exit();
   }
 
- $imagePath = '';
-echo print_r($_FILES,1);
+  $imagePath = '';
   if (count($_FILES) > 0) {
     if ($_FILES["myfile"]["error"] > 0) {
     } else {
@@ -32,5 +36,6 @@ echo print_r($_FILES,1);
 
   $dao = new Dao();
   $dao->saveComment($comment, $imagePath);
+  $_SESSION['message'] = "Thanks for posting!";
   header("Location: comments.php");
   exit();
