@@ -1,12 +1,27 @@
 <?php
+session_start();
 
 require_once 'Dao.php';
 
-$name = $_POST['name'];
-$comment = $_POST['comment'];
+$name = trim($_POST['name']);
+$comment = trim($_POST['comment']);
 
-$dao = new Dao();
-$dao->saveComment($name, $comment);
+$messages = array();
 
+if (strlen($name) == 0) {
+  $messages['bad'][] = "Please enter a name";
+}
+
+if (strlen($comment) == 0) {
+  $messages['bad'][] = "Please enter a comment";
+}
+
+if (count($messages) == 0) {
+  $dao = new Dao();
+  $dao->saveComment($name, $comment);
+  $messages['good'][] = 'Thank you for your comment!';
+}
+
+$_SESSION['messages'] = $messages;
 header('Location: http://localhost/comment_page/comments.php');
 exit();

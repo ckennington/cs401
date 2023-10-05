@@ -1,0 +1,26 @@
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table thead tr {
+}
+
+table th,
+table td {
+    border: 1px solid black;
+    padding: 10px 10px;
+}
+
+table tbody tr {
+    border: 1px solid black;
+}
+
+table tbody tr:nth-of-type(even) {
+}
+
+table tbody tr:last-of-type {
+}
+
+table tbody tr.active-row {
+}
