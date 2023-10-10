@@ -41,4 +41,9 @@ class Dao {
     $conn = $this->getConnection();
     return $conn->query("SELECT name, comment, date_entered FROM comments ORDER BY date_entered desc")->fetchAll(PDO::FETCH_ASSOC);
   }
+
+  public function authenticate ($username, $password) {
+     // TODO make an actual table.
+     return ($username == "conrad" && $password == 'abc123');
+  }
 } // end Dao

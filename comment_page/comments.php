@@ -1,8 +1,20 @@
 <?php
   session_start();
 
+  if(!isset($_SESSION['authenticated'])) {
+    header('Location: login.php');
+    exit; 
+  }
+
+  if(isset($_SESSION['authenticated']) && !$_SESSION['authenticated']) {
+    header('Location: login.php');
+    exit; 
+  }
+
   require_once 'Dao.php';
   $dao = new Dao();
+
+  //echo "<pre>" . print_r($_SESSION,1) . "</pre>";
 ?>
 <html>
   <head>
@@ -11,10 +23,26 @@
   </head>
   <body>
     <h1>Leave a Comment</h1>
+    <a href="logout.php">Logout</a>
     <form method="post" action="comment_handler.php">
-       <div>Name: <input type="text" name="name"/></div>
+       <?php 
+          $name = "";
+          $comment = "";
+          if(isset($_SESSION['messages']['bad'])) {
+              if(isset($_SESSION['post'])) {
+                 if(isset($_SESSION['post']['name'])) {
+                    $name = $_SESSION['post']['name'];
+                 }
+                 if(isset($_SESSION['post']['comment'])) {
+                    $comment = $_SESSION['post']['comment'];
+                 }
+              }
+          }
+
+       ?>
+       <div>Name: <input type="text" value="<?php echo $name; ?>" name="name"/></div>
        <Br/>
-       <div>Comment: <input type="text" name="comment"/></div>
+       <div>Comment: <input type="text" value="<?php echo $comment; ?>"  name="comment"/></div>
        <Br/>
        <div><input type="submit" name="Submit"/></div>
     </form>

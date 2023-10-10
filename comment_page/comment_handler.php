@@ -23,5 +23,6 @@ if (count($messages) == 0) {
 }
 
 $_SESSION['messages'] = $messages;
+$_SESSION['post'] = $_POST;
 header('Location: http://localhost/comment_page/comments.php');
 exit();
