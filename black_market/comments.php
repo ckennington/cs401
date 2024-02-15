@@ -28,18 +28,15 @@ $dao = new Dao("comments.log");
     <table>
        <thead>
           <tr>
-          <th>Name</th>
           <th>Comment</th>
-          <th>Rating</th>
+          <th>Date</th>
        </tr>
        </thead>
     <?php
 
        $lines = $dao->getComments();
-       $lines = array_reverse($lines);
        foreach ($lines as $line) {
-           list($name, $comment, $rating) = explode("|", $line);
-           echo "<tr><td>{$name}</td><td>{$comment}</td><td>{$rating}</td></tr>";
+           echo "<tr><td>{$line['comment']}</td><td>{$line['date_entered']}</td></tr>";
        }
     ?>     
     </table>
