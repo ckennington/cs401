@@ -3,6 +3,18 @@ require_once "header.php";
 require_once "Dao.php";
 
 $dao = new Dao();
+
+setcookie("usertoken", "noice");
+
+
+if(isset($_COOKIE["visits"])) {
+   $cookie = $_COOKIE["visits"]; 
+   echo "number of visits: {$cookie}";
+   setcookie("visits", $cookie + 1);
+} else {
+   setcookie("visits", 1);
+}
+
 ?>
 
  <div id="text">

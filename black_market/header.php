@@ -3,6 +3,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <?php session_start(); ?>
     <div id="content">
        <h1>Welcome to the Dark Web</h1>
        <div id="nav">
@@ -12,4 +13,5 @@
            <li><a href="not-stolen.php">Not-stolen</a></li>
            <li><a href="nice-people.php">Nice People</a></li>
            <li><a href="about.php">About</a></li>
+           <li><a href="logout.php">Logout</a></li>
          </ol>

@@ -1,4 +1,5 @@
 <?php
+  require_once '../KLogger.php';
 
   class Dao {
 
@@ -8,14 +9,18 @@
     private $db = "ckenning";
     private $user = "ckenning";
     private $pass = "password";
+    protected $logger;
 
     public function getConnection () {
-    return
-      new PDO("mysql:host={$this->host};dbname={$this->db}", $this->user,
-          $this->pass);
+      $this->logger->LogDebug("getting a connection...");
+ 
+      return
+        new PDO("mysql:host={$this->host};dbname={$this->db}", $this->user,
+            $this->pass);
     }
 
     public function __construct ($filename = "stuff.data") {
+       $this->logger = new KLogger ( "log.txt" , KLogger::WARN ) ;
        $this->filename = $filename;
     }
    
@@ -26,6 +31,7 @@
     }
 
     public function saveComment($name, $comment) {
+        $this->logger->LogInfo("saveComment: [{$name}], [{$comment}]");
         $conn = $this->getConnection();
         $saveQuery =
             "INSERT INTO comments

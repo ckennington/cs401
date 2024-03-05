@@ -1,9 +1,23 @@
-<?php require_once "header.php";
+<?php 
+require_once "header.php";
+if (isset($_SESSION['authenticated']) && $_SESSION['authenticated']) {
+} else {
+  header("Location: http://localhost/black_market/login.php");
+  exit();
+}
 require_once "Dao.php";
 $dao = new Dao("comments.log");
 ?>
 
  <div id="text">
+  <?php
+     if (isset($_SESSION['message'])) {
+        echo "<div class='message'>{$_SESSION['message']}</div>";
+        unset($_SESSION['message']);
+     }
+
+   ?>
+
 
   <h2>Leave a Comment</h2>
 

@@ -88,3 +88,9 @@ tr, td {
 
 }
 
+.message{
+   background-color: #AA4A44;
+   color: white;
+   padding: 5 10;
+   width: 400px;
+}
