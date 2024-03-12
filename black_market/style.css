@@ -89,8 +89,18 @@ tr, td {
 }
 
 .message{
-   background-color: #AA4A44;
+   margin-top: 5px;
+   margin-left: 5px;
    color: white;
    padding: 5 10;
-   width: 400px;
+   width: 500px;
 }
+
+.bad {
+   background-color: #AA4A44;
+}
+
+.good {
+   background-color: green;
+}
+

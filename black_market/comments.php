@@ -11,9 +11,11 @@ $dao = new Dao("comments.log");
 
  <div id="text">
   <?php
-     if (isset($_SESSION['message'])) {
-        echo "<div class='message'>{$_SESSION['message']}</div>";
-        unset($_SESSION['message']);
+     if (isset($_SESSION['messages'])) {
+        foreach ($_SESSION['messages'] as $message) {
+           echo "<div class='message " . $_SESSION['sentiment'] . "'>{$message}</div>";
+        }
+        unset($_SESSION['messages']);
      }
 
    ?>
@@ -24,7 +26,7 @@ $dao = new Dao("comments.log");
   <form method="post" action="comment_handler.php">
       <div>
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
+        <input type="text" id="name" name="name" value="<?php echo isset($_SESSION['inputs']['name']) ? $_SESSION['inputs']['name'] : ""; ?>">
       </div>
       <div>
         <label for="name">Comment:</label>
